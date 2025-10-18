@@ -9,6 +9,9 @@ plugins {
 setupApp()
 
 android {
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
     }
