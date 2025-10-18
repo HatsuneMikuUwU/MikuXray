@@ -860,15 +860,15 @@ class ConfigurationFragment @JvmOverloads constructor(
                     }
                     1 -> {
                         binding.profileStatus.text = getString(R.string.available, profile.ping)
-                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.material_green_500))
+                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.profile_ping_available))
                     }
                     2 -> {
                         binding.profileStatus.text = profile.error
-                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.material_red_500))
+                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.profile_ping_unavailable))
                     }
                     3 -> {
                         binding.profileStatus.setText(R.string.unavailable)
-                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.material_red_500))
+                        binding.profileStatus.setTextColor(requireContext().getColour(R.color.profile_ping_unavailable))
                     }
                 }
 
@@ -1682,9 +1682,9 @@ class ConfigurationFragment @JvmOverloads constructor(
                     }
                 } else if (proxyEntity.status == 1) {
                     profileStatus.text = getString(R.string.available, proxyEntity.ping)
-                    profileStatus.setTextColor(requireContext().getColour(R.color.material_green_500))
+                    profileStatus.setTextColor(requireContext().getColour(R.color.profile_ping_available))
                 } else {
-                    profileStatus.setTextColor(requireContext().getColour(R.color.material_red_500))
+                    profileStatus.setTextColor(requireContext().getColour(R.color.profile_ping_unavailable))
                     if (proxyEntity.status == 2) {
                         profileStatus.text = proxyEntity.error
                     }
