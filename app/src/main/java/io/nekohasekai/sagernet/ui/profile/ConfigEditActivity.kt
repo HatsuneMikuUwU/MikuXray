@@ -191,28 +191,28 @@ class ConfigEditActivity : ThemedActivity() {
         return ColorScheme(
             textColor = when (Theme.getTheme()) {
                 R.style.Theme_SagerNet_Black -> Color.WHITE
-                R.style.Theme_SagerNet_LightBlack -> Color.BLACK
+                R.style.Theme_SagerNet_Black -> Color.BLACK
                 else -> colorPrimary
             },
             backgroundColor = when (Theme.getTheme()) {
                 R.style.Theme_SagerNet_Black -> Color.BLACK
-                R.style.Theme_SagerNet_LightBlack -> Color.WHITE
+                R.style.Theme_SagerNet_Black -> Color.WHITE
                 else -> if (Theme.usingNightMode()) Color.BLACK else Color.WHITE
             },
             gutterColor = colorPrimary,
             gutterDividerColor = if (Theme.usingNightMode()) Color.BLACK else Color.WHITE,
             gutterCurrentLineNumberColor = when (Theme.getTheme()) {
-                R.style.Theme_SagerNet_LightBlack -> Color.BLACK
+                R.style.Theme_SagerNet_Black -> Color.BLACK
                 else -> Color.WHITE
             },
             gutterTextColor = when (Theme.getTheme()) {
-                R.style.Theme_SagerNet_LightBlack -> Color.BLACK
+                R.style.Theme_SagerNet_Black -> Color.BLACK
                 else -> Color.WHITE
             },
             selectedLineColor = if (Theme.usingNightMode()) "#2C2C2C".toColorInt() else "#D3D3D3".toColorInt(),
             selectionColor = when (Theme.getTheme()) {
                 R.style.Theme_SagerNet_Black -> "#4C4C4C".toColorInt()
-                R.style.Theme_SagerNet_LightBlack -> "#B3B3B3".toColorInt()
+                R.style.Theme_SagerNet_Black -> "#B3B3B3".toColorInt()
                 else -> colorPrimary
             },
             suggestionQueryColor = "#7CE0F3".toColorInt(),
