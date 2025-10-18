@@ -41,12 +41,14 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginRight="16.0dip"
+                app:cardBackgroundColor="?attr/colorCard"
+                app:cardCornerRadius="14.0dip"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardElevation="2dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -54,11 +56,12 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/server_address"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/server_address"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <EditText
                         android:id="@+id/probe_cert_server"
@@ -66,12 +69,16 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         tools:ignore="LabelFor" />
+                        
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/server_port"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:hint="@string/server_port"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <EditText
                         android:id="@+id/probe_cert_server_port"
@@ -79,12 +86,16 @@
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         tools:ignore="LabelFor" />
+                        
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/sni"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:hint="@string/sni"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <EditText
                         android:id="@+id/probe_cert_server_name"
@@ -92,12 +103,16 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         tools:ignore="LabelFor" />
+                        
+                        </com.google.android.material.textfield.TextInputLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/alpn"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:hint="@string/alpn"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <EditText
                         android:id="@+id/probe_cert_alpn"
@@ -105,14 +120,20 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         tools:ignore="LabelFor" />
+                        
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     <TextView
+                        android:textColor="?attr/colorOnSurface"
+                        android:layout_marginTop="8.0dip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/protocol"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                        android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                        android:textSize="14.0sp" />
 
                     <Spinner
+                        android:layout_marginTop="8.0dip"
                         android:id="@+id/probe_cert_protocol"
                         android:layout_width="match_parent"
                         android:entries="@array/probe_cert_protocol"
@@ -138,20 +159,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="@string/start"
-                    android:textColor="?primaryOrTextPrimary" />
+                    android:textColor="?colorPrimary" />
             </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/certificateCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginRight="16.0dip"
+                app:cardBackgroundColor="?attr/colorCard"
+                app:cardCornerRadius="14.0dip"
                 android:clickable="true"
                 android:focusable="true"
-                app:cardElevation="2dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -159,11 +181,12 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/certificates"
-                        android:textAppearance="?attr/textAppearanceSubtitle2" />
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/certificates"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <EditText
                         android:id="@+id/certificate"
@@ -172,9 +195,12 @@
                         android:inputType="text|textMultiLine"
                         android:singleLine="false"
                         android:maxLines="3"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:textColorSecondary"
+                        android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                        android:textSize="14.0sp"
+                        android:textColor="?attr/colorOnSurface"
                         tools:ignore="LabelFor" />
+                        
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     <Spinner
                         android:id="@+id/cert_hash_type"
@@ -190,8 +216,9 @@
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:textIsSelectable="true"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:textColorSecondary" />
+                        android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                        android:textSize="14.0sp"
+                        android:textColor="?attr/colorOnSurface" />
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
