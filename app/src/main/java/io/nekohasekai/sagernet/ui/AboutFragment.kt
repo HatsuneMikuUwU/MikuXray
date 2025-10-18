@@ -195,48 +195,63 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                 .addCard(MaterialAboutCard.Builder()
                     .outline(false)
                     .title(R.string.project)
-                    .addItem(MaterialAboutActionItem.Builder()
+                    .addItem(
+                    MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_github)
                         .text(R.string.uwu_exclave)
                         .subText(R.string.github)
                         .setOnClickAction {
-                            startActivity(Intent(
-                                Intent.ACTION_VIEW,
-                                "https://github.com/dyhkwong/Exclave".toUri()
-                            ))
+                            startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    "https://github.com/dyhkwong/Exclave".toUri()
+                                )
+                            )
                         }
-
-                        .addItem(MaterialAboutActionItem.Builder()
+                        .build()
+                )
+                .addItem(
+                    MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_github)
                         .text(R.string.uwu_mikuxray)
                         .subText(R.string.github)
                         .setOnClickAction {
-                            startActivity(Intent(
-                                Intent.ACTION_VIEW,
-                                "https://github.com/HatsuneMikuUwU/MikuXray".toUri()
-                            ))
+                            startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    "https://github.com/HatsuneMikuUwU/MikuXray".toUri()
+                                )
+                            )
                         }
-
-                        .addItem(MaterialAboutActionItem.Builder()
+                        .build()
+                )
+                .addItem(
+                    MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_qu_shadowsocks_foreground)
                         .text(R.string.uwu_hatsune)
                         .subText(R.string.telegram)
                         .setOnClickAction {
-                            startActivity(Intent(
-                                Intent.ACTION_VIEW,
-                                "https://t.me/uwuowoumuChannel".toUri()
-                            ))
+                            startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    "https://t.me/uwuowoumuChannel".toUri()
+                                )
+                            )
                         }
-
-                        .addItem(MaterialAboutActionItem.Builder()
+                        .build()
+                )
+                .addItem(
+                    MaterialAboutActionItem.Builder()
                         .icon(R.drawable.ic_qu_shadowsocks_foreground)
                         .text(R.string.uwu_hsskyboy)
                         .subText(R.string.telegram)
                         .setOnClickAction {
-                            startActivity(Intent(
-                                Intent.ACTION_VIEW,
-                                "https://t.me/np_nbcn".toUri()
-                            ))
+                            startActivity(
+                                Intent(
+                                    Intent.ACTION_VIEW,
+                                    "https://t.me/np_nbcn".toUri()
+                                )
+                            )
                         }
                         .build())
                     .build())
