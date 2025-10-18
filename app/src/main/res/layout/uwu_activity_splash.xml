@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/splash_root"
+    android:background="?colorPrimary"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+            <com.neko.circleimageview.CircleImageView
+                android:id="@+id/logo_view"
+                android:layout_width="160.0dip"
+                android:layout_height="160.0dip"
+                android:src="@drawable/uwu_banner_splash"
+                app:civ_border_color="?android:textColorPrimaryInverse"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3.0dip"
+                app:civ_circle_background_color="@android:color/transparent"
+                android:scaleType="centerCrop" />
+        
+        <TextView
+            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+            android:textSize="24.0sp"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:gravity="center_horizontal"
+            android:id="@+id/splash_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/app_name"
+            app:layout_constraintEnd_toEndOf="@+id/logo_view"
+            app:layout_constraintStart_toStartOf="@+id/logo_view"
+            app:layout_constraintTop_toBottomOf="@+id/logo_view" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+        android:textSize="14.0sp"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:gravity="center_horizontal"
+        android:id="@+id/splash_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/uwu_splash_title"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/splash_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <TextView
+        android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+        android:textSize="14.0sp"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:id="@+id/splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:text="@string/uwu_splash_summary"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:paddingLeft="8.0dip"
+    android:paddingTop="@dimen/mal_baseline_half"
+    android:paddingBottom="@dimen/mal_baseline_half"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/mal_item_image"
+        android:background="@drawable/uwu_bg_icon"
+        android:padding="10.0dip"
+        android:layout_width="45.0dip"
+        android:layout_height="45.0dip"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="false"
+        android:tint="?android:textColorPrimaryInverse"
+        android:cropToPadding="false"
+        android:contentDescription="@null"
+        android:layout_marginStart="10.0dip"
+        android:backgroundTint="?attr/colorPrimary" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mal_baseline"
+        android:layout_marginRight="@dimen/mal_baseline"
+        android:minHeight="@dimen/mal_action_action_item_image_height"
+        android:layout_weight="1.0"
+        android:layout_marginStart="@dimen/mal_baseline"
+        android:layout_marginEnd="@dimen/mal_baseline">
+        <TextView
+            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+            android:textSize="17.0sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/mal_item_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+            android:textSize="14.0sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:id="@+id/mal_action_item_subtext"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="48.0dip"
+    android:layout_marginBottom="48.0dip"
+    android:overScrollMode="ifContentScrolls"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="?attr/dialogPreferredPadding"
+        android:paddingTop="?attr/dialogPreferredPadding"
+        android:paddingRight="?attr/dialogPreferredPadding"
+        android:paddingBottom="16.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="?attr/dialogPreferredPadding"
+        android:paddingEnd="?attr/dialogPreferredPadding">
+        <TextView
+            android:textColor="?android:textColorSecondary"
+            android:id="@android:id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginStart="0.0dip"
+            android:layout_marginEnd="0.0dip"
+            style="?android:textAppearanceSmall" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="?android:textColorPrimary"
+                android:id="@android:id/edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <requestFocus />
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

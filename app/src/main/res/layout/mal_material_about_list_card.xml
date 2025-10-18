@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/mal_list_card"
+    android:paddingLeft="@dimen/mal_baseline_half"
+    android:paddingTop="@dimen/mal_baseline"
+    android:paddingRight="@dimen/mal_baseline_half"
+    android:paddingBottom="@dimen/mal_baseline"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8.0dip"
+    android:layout_marginBottom="8.0dip"
+    android:paddingStart="@dimen/mal_baseline_half"
+    android:paddingEnd="@dimen/mal_baseline_half"
+    android:layout_marginStart="16.0dip"
+    android:layout_marginEnd="16.0dip"
+    app:cardBackgroundColor="?colorCard"
+    app:cardCornerRadius="28.0dip"
+    app:cardElevation="0.0dip"
+    app:strokeColor="@color/mal_stroke_color"
+    app:strokeWidth="@dimen/mal_stroke_width"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+            android:textSize="14.0sp"
+            android:textColor="?attr/colorOnSurface"
+            android:id="@+id/mal_list_card_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mal_baseline"
+            android:layout_marginTop="@dimen/mal_baseline"
+            android:layout_marginRight="@dimen/mal_baseline"
+            android:layout_marginBottom="@dimen/mal_baseline_half"
+            android:layout_marginStart="@dimen/mal_baseline"
+            android:layout_marginEnd="@dimen/mal_baseline" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mal_card_recyclerview"
+            android:paddingTop="@dimen/mal_baseline_half"
+            android:paddingBottom="@dimen/mal_baseline_half"
+            android:clipToPadding="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
