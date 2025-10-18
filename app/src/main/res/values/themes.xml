@@ -183,6 +183,18 @@
         <item name="dialogCornerRadius">28.0dip</item>
     </style>
 
+  <style name="ThemeOverlay.Material.Dialog.ColorPicker" parent="@style/ThemeOverlay.AppCompat.Dialog">
+        <item name="android:colorBackground">?attr/colorSurfaceContainerHigh</item>
+        <item name="android:colorBackgroundFloating">?attr/colorSurfaceContainerHigh</item>
+        <item name="android:dialogCornerRadius">28.0dip</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="colorBackgroundFloating">?attr/colorSurfaceContainerHigh</item>
+        <item name="dialogCornerRadius">28.0dip</item>
+        <item name="alertDialogStyle">@style/AlertDialog.AppCompat</item>
+    </style>
+
     <style name="AppearanceFoundation.Title" parent="TextAppearance.AppCompat.Title">
         <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textStyle">bold</item>
