@@ -1,29 +1,34 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="profileName"
         app:title="@string/profile_name"
         app:useSimpleSummaryProvider="true" />
-
-    <com.takisoft.preferencex.SimpleMenuPreference
-        app:defaultValue="v2ray"
-        app:entries="@array/config_type_entry"
-        app:entryValues="@array/config_type_value"
-        app:icon="@drawable/ic_baseline_nfc_24"
-        app:key="serverProtocol"
-        app:title="@string/config_type"
-        app:useSimpleSummaryProvider="true" />
-
-    <io.nekohasekai.sagernet.widget.EditConfigPreference
-        app:icon="@drawable/ic_image_edit"
-        app:key="serverConfig"
-        app:title="@string/edit" />
-
-    <EditTextPreference
-        app:icon="@drawable/ic_hardware_router"
-        app:key="serverAddress"
-        app:title="@string/server_address"
-        app:useSimpleSummaryProvider="true" />
-
+    <PreferenceCategory
+        app:title="@string/uwu_general_settings_title">
+        <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_top"
+            app:defaultValue="v2ray"
+            app:entries="@array/config_type_entry"
+            app:entryValues="@array/config_type_value"
+            app:icon="@drawable/ic_baseline_nfc_24"
+            app:key="serverProtocol"
+            app:title="@string/config_type"
+            app:useSimpleSummaryProvider="true" />
+        <io.nekohasekai.sagernet.widget.EditConfigPreference
+            android:layout="@layout/uwu_bot"
+            app:icon="@drawable/ic_image_edit"
+            app:key="serverConfig"
+            app:title="@string/edit" />
+        <EditTextPreference
+            android:layout="@layout/uwu_sin"
+            app:icon="@drawable/ic_hardware_router"
+            app:key="serverAddress"
+            app:title="@string/server_address"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
 </PreferenceScreen>
