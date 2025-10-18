@@ -544,6 +544,7 @@
         <EditTextPreference
             android:layout="@layout/uwu_mid"
             app:defaultValue="127.0.0.1:6060"
+            app:icon="@drawable/ic_hardware_router"
             app:key="pprofServer"
             app:title="pprof server listen address"
             app:useSimpleSummaryProvider="true" />
@@ -551,6 +552,7 @@
             android:layout="@layout/uwu_mid"
             app:dialogMessage="For testing purpose only.\nBreaking changes are expected.\nNo guarantee of existence."
             app:key="experimentalFlags"
+            app:icon="@drawable/ic_baseline_grid_3x3_24"
             app:title="Experimental flags" />
         <SwitchPreference
             android:layout="@layout/uwu_bot_switch"
