@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Exclave</string>
+    <string name="app_name" translatable="false">MikuXray</string>
     <string name="app_desc">The universal proxy toolchain for Android, written in Kotlin.</string>
     <string name="project">Project</string>
     <string name="github">Source code</string>
@@ -159,6 +159,7 @@
     <string name="proxied_apps">Per-app VPN</string>
     <string name="proxied_apps_summary">Exclude selected apps from VPN or include selected apps in VPN</string>
     <string name="off">Off</string>
+    <string name="on">On</string>
     <string name="search_apps">Search…</string>
     <string name="scanning">Scanning…</string>
     <string name="invert_selections">Invert selections</string>
