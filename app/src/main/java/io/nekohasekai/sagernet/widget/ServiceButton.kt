@@ -84,7 +84,7 @@ class ServiceButton @JvmOverloads constructor(
 
         fun start() {
             setImageDrawable(icon)
-            setColorFilter(context.getColorAttr(R.attr.whiteOrTextPrimary))
+            setColorFilter(context.getColorAttr(R.attr.colorIcon))
             icon.start()
             if (DataStore.fabStyle == FabStyle.SagerNet) {
                 progress.onStart()
