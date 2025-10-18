@@ -41,5 +41,5 @@
         android:src="@drawable/ic_action_lock_open"
         android:importantForAccessibility="no"
         tools:ignore="RtlSymmetry"
-        app:tint="@color/material_amber_accent_700" />
+        app:tint="@color/amber_primary" />
 </LinearLayout>
