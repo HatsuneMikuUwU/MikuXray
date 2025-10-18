@@ -1,101 +1,186 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.SagerNet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
-        <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
-        <item name="colorButtonNormal">?colorAccent</item>
-        <item name="android:navigationBarColor">?colorPrimaryDark</item>
-        <item name="colorPrimary">@color/material_pink_500</item>
-        <item name="colorPrimaryDark">@color/material_pink_700</item>
-        <item name="colorAccent">@color/material_pink_accent_200</item>
-
-        <item name="colorMaterial100">@color/material_pink_100</item>
-        <item name="colorMaterial300">@color/material_pink_300</item>
-
+<resources>
+  
+    <style name="Theme.SagerNet" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/magenta_background</item>
+        <item name="android:windowBackground">?colorBg</item>
+        <item name="android:homeAsUpIndicator">@drawable/baseline_arrow_back_24</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="accentOrTextPrimary">?colorPrimary</item>
         <item name="accentOrTextSecondary">?colorAccent</item>
-        <item name="accentOrTextPrimary">?colorAccent</item>
-        <item name="primaryOrTextSecondary">?colorPrimary</item>
-        <item name="primaryOrTextPrimary">?colorPrimary</item>
-
-        <item name="fabColorBackground">?colorPrimary</item>
-        <item name="selectedColorPrimary">?colorPrimary</item>
-        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
-        <item name="tabTextColor">#99FFFFFF</item>
-        <item name="tabSelectedTextColor">@color/white</item>
-        <item name="tabIndicatorColor">@color/white</item>
-        <item name="tabRippleColor">@color/white</item>
-        <item name="whiteOrTextPrimary">@color/white</item>
-
-        <item name="windowActionModeOverlay">true</item>
-
-        <!-- Remove ActionBar but keep styles and themes -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-
+        <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
+        <item name="actionBarTheme">@style/AppTheme.AppBarOverlay</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
-
-        <item name="itemShapeAppearance">
-            @style/ShapeAppearance.MaterialComponents.MediumComponent
-        </item>
-
-        <item name="alertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
-        <item name="materialAlertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
+        <item name="colorAccent">?colorPrimary</item>
+        <item name="colorButtonNormal">?colorAccent</item>
+        <item name="colorError">@color/magenta_error</item>
+        <item name="colorErrorContainer">@color/magenta_errorContainer</item>
+        <item name="colorOnBackground">@color/magenta_onBackground</item>
+        <item name="colorOnError">@color/magenta_onError</item>
+        <item name="colorOnErrorContainer">@color/magenta_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/magenta_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/magenta_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/magenta_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/magenta_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/magenta_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/magenta_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/magenta_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/magenta_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/magenta_onTertiaryContainer</item>
+        <item name="colorOutline">@color/magenta_outline</item>
+        <item name="colorOutlineVariant">@color/magenta_outlineVariant</item>
+        <item name="colorPrimary">@color/magenta_primary</item>
+        <item name="colorPrimaryContainer">@color/magenta_primaryContainer</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="colorPrimaryInverse">@color/magenta_inversePrimary</item>
+        <item name="colorSecondary">@color/magenta_secondary</item>
+        <item name="colorSecondaryContainer">@color/magenta_secondaryContainer</item>
+        <item name="colorSurface">@color/magenta_surface</item>
+        <item name="colorSurfaceInverse">@color/magenta_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/magenta_surfaceVariant</item>
+        <item name="colorTertiary">@color/magenta_tertiary</item>
+        <item name="colorTertiaryContainer">@color/magenta_tertiaryContainer</item>
+        <item name="elevation">0.0dip</item>
+        <item name="fabColorBackground">?colorPrimary</item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+        <item name="popupMenuBackground">@drawable/uwu_bg_popup</item>
+        <item name="popupMenuStyle">@style/AppTheme.PopupMenu</item>
+        <item name="preferenceTheme">@style/AppTheme.Preference</item>
+        <item name="primaryOrTextPrimary">?colorPrimary</item>
+        <item name="primaryOrTextSecondary">?colorPrimary</item>
+        <item name="selectedColorPrimary">?colorPrimary</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabRippleColor">@color/ripple_material_light</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">#99ffffff</item>
+        <item name="whiteOrTextPrimary">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorBg">?colorSurfaceVariant</item>
+        <item name="colorCard">?colorSurfaceContainerLow</item>
+        <item name="colorOnPrimaryFixed">@color/magenta_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/magenta_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/magenta_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/magenta_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/magenta_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/magenta_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/magenta_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/magenta_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/magenta_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/magenta_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/magenta_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/magenta_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/magenta_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/magenta_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/magenta_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/magenta_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/magenta_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/magenta_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/magenta_tertiaryFixedDim</item>
+        <item name="colorIcon">@color/white</item>
+        <item name="android:scrollbarSize">0.0dip</item>
     </style>
 
-    <style name="Theme.SagerNet.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
-        <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
-        <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
-        <item name="colorButtonNormal">?colorAccent</item>
-        <item name="android:navigationBarColor">?colorPrimaryDark</item>
-        <item name="colorPrimary">@color/material_pink_500</item>
-        <item name="colorPrimaryDark">@color/material_pink_700</item>
-        <item name="colorAccent">@color/material_pink_accent_200</item>
-
-        <item name="colorMaterial100">@color/material_pink_100</item>
-        <item name="colorMaterial300">@color/material_pink_300</item>
-
-        <item name="accentOrTextSecondary">?colorAccent</item>
+    <style name="Theme.SagerNet.Dialog" parent="@style/Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:colorBackground">@color/magenta_background</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:navigationBarColor">?colorPrimary</item>
         <item name="accentOrTextPrimary">?colorAccent</item>
-        <item name="primaryOrTextSecondary">?colorPrimary</item>
-        <item name="primaryOrTextPrimary">?colorPrimary</item>
-
-        <item name="fabColorBackground">?colorPrimary</item>
-        <item name="selectedColorPrimary">?colorPrimary</item>
+        <item name="accentOrTextSecondary">?colorAccent</item>
+        <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="actionBarStyle">@style/Widget.MaterialComponents.ActionBar.Solid</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
-        <item name="tabTextColor">#99FFFFFF</item>
-        <item name="tabSelectedTextColor">@color/white</item>
-        <item name="tabIndicatorColor">@color/white</item>
-        <item name="tabRippleColor">@color/white</item>
-        <item name="whiteOrTextPrimary">@color/white</item>
-
-        <item name="windowActionModeOverlay">true</item>
-
-        <!-- Remove ActionBar but keep styles and themes -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-
+        <item name="actionModeCloseDrawable">@drawable/ic_navigation_close</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
         <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Choice.SagerNet</item>
+        <item name="colorAccent">?colorPrimary</item>
+        <item name="colorButtonNormal">?colorAccent</item>
+        <item name="colorError">@color/magenta_error</item>
+        <item name="colorErrorContainer">@color/magenta_errorContainer</item>
+        <item name="colorOnBackground">@color/magenta_onBackground</item>
+        <item name="colorOnError">@color/magenta_onError</item>
+        <item name="colorOnErrorContainer">@color/magenta_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/magenta_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/magenta_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/magenta_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/magenta_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/magenta_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/magenta_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/magenta_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/magenta_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/magenta_onTertiaryContainer</item>
+        <item name="colorOutline">@color/magenta_outline</item>
+        <item name="colorOutlineVariant">@color/magenta_outlineVariant</item>
+        <item name="colorPrimary">@color/magenta_primary</item>
+        <item name="colorPrimaryContainer">@color/magenta_primaryContainer</item>
+        <item name="colorPrimaryDark">?colorPrimary</item>
+        <item name="colorPrimaryInverse">@color/magenta_inversePrimary</item>
+        <item name="colorSecondary">@color/magenta_secondary</item>
+        <item name="colorSecondaryContainer">@color/magenta_secondaryContainer</item>
+        <item name="colorSurface">@color/magenta_surface</item>
+        <item name="colorSurfaceInverse">@color/magenta_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/magenta_surfaceVariant</item>
+        <item name="colorTertiary">@color/magenta_tertiary</item>
+        <item name="colorTertiaryContainer">@color/magenta_tertiaryContainer</item>
+        <item name="elevation">0.0dip</item>
+        <item name="fabColorBackground">?colorPrimary</item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet</item>
+        <item name="popupMenuBackground">@drawable/uwu_bg_popup</item>
+        <item name="primaryOrTextPrimary">?colorPrimary</item>
+        <item name="primaryOrTextSecondary">?colorPrimary</item>
+        <item name="selectedColorPrimary">?colorPrimary</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabRippleColor">@color/ripple_material_light</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">#99ffffff</item>
+        <item name="whiteOrTextPrimary">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowFixedHeightMajor">95.00001%</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorBg">?colorSurfaceVariant</item>
+        <item name="colorCard">?colorSurfaceContainerLow</item>
+        <item name="colorOnPrimaryFixed">@color/magenta_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/magenta_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/magenta_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/magenta_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/magenta_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/magenta_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/magenta_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/magenta_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/magenta_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/magenta_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/magenta_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/magenta_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/magenta_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/magenta_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/magenta_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/magenta_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/magenta_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/magenta_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/magenta_tertiaryFixedDim</item>
+        <item name="colorIcon">@color/white</item>
+        <item name="android:scrollbarSize">0.0dip</item>
+    </style>
 
-        <item name="itemShapeAppearance">
-            @style/ShapeAppearance.MaterialComponents.MediumComponent
-        </item>
 
-        <item name="alertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
-        <item name="materialAlertDialogTheme">
-            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet
-        </item>
-
-        <item name="windowFixedHeightMajor" type="dimen">95%</item>
-
+    <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:colorBackground">?attr/colorSurfaceContainerHigh</item>
+        <item name="android:colorBackgroundFloating">?attr/colorSurfaceContainerHigh</item>
+        <item name="android:dialogCornerRadius">28.0dip</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary</item>
+        <item name="colorBackgroundFloating">?attr/colorSurfaceContainerHigh</item>
+        <item name="dialogCornerRadius">28.0dip</item>
     </style>
 
     <style name="AppearanceFoundation.Title" parent="TextAppearance.AppCompat.Title">
@@ -103,24 +188,28 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ThemeOverlay.MaterialComponents.MaterialAlertDialog.SagerNet">
-        <item name="buttonBarPositiveButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
-        </item>
-        <item name="buttonBarNegativeButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Primary
-        </item>
-        <item name="buttonBarNeutralButtonStyle">
-            @style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary
-        </item>
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginStart">0.0dip</item>
+        <item name="android:textAllCaps">false</item>
     </style>
-
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary">
-        <item name="android:textColor">?primaryOrTextPrimary</item>
+  
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginStart">0.0dip</item>
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
     </style>
-
-    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Flush.Primary">
-        <item name="android:textColor">?primaryOrTextPrimary</item>
+  
+    <style name="Widget.MaterialComponents.Button.TextButton.Dialog.Primary" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:minWidth">64.0dip</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginStart">8.0dip</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="Widget.MaterialComponents.Chip.Choice.SagerNet">
@@ -132,396 +221,7 @@
         <item name="rippleColor">@color/chip_ripple_color</item>
     </style>
 
-    <style name="Theme.SagerNet.Black">
-        <item name="colorPrimary">@color/material_light_black</item>
-        <item name="colorPrimaryDark">@color/black</item>
-        <item name="colorAccent">@color/white</item>
-        <item name="colorMaterial100">@color/fab_color_progress</item>
-        <item name="colorMaterial300">@color/material_light_black</item>
-
-        <item name="pref_categoryColor">?android:textColorPrimary</item>
-        <item name="android:textColorLink">?attr/accentOrTextSecondary</item>
-        <item name="fabColorBackground">?colorPrimaryDark</item>
-        <item name="selectedColorPrimary">@color/white</item>
-        <item name="itemShapeFillColor">#616161</item>
-
-        <item name="accentOrTextSecondary">?android:textColorSecondary</item>
-        <item name="accentOrTextPrimary">?android:textColorPrimary</item>
-        <item name="primaryOrTextSecondary">?android:textColorSecondary</item>
-        <item name="primaryOrTextPrimary">?android:textColorPrimary</item>
-    </style>
-
-
-    <style name="Theme.SagerNet.LightBlack">
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryDark">@color/material_light_white</item>
-        <item name="colorAccent">@color/black</item>
-        <item name="colorMaterial300">@color/white</item>
-
-        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>
-        <item name="selectedColorPrimary">@color/black</item>
-        <item name="whiteOrTextPrimary">?android:textColorPrimary</item>
-        <item name="fabColorBackground">@color/white</item>
-
-        <item name="tabTextColor">?android:textColorSecondary</item>
-        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
-        <item name="tabIndicatorColor">@color/black</item>
-        <item name="tabRippleColor">@android:color/transparent</item>
-
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
-        <item name="itemShapeFillColor">#E0E0E0</item>
-
-        <item name="colorMaterial100">@color/fab_color_progress</item>
-        <item name="pref_categoryColor">?android:textColorPrimary</item>
-        <item name="android:textColorLink">?attr/accentOrTextSecondary</item>
-
-        <item name="accentOrTextSecondary">?android:textColorSecondary</item>
-        <item name="accentOrTextPrimary">?android:textColorPrimary</item>
-        <item name="primaryOrTextSecondary">?android:textColorSecondary</item>
-        <item name="primaryOrTextPrimary">?android:textColorPrimary</item>
-    </style>
-
-    <style name="Theme.SagerNet.Amber">
-        <item name="colorPrimary">@color/material_amber_500</item>
-        <item name="colorPrimaryDark">@color/material_amber_700</item>
-        <item name="colorAccent">@color/material_amber_accent_200</item>
-        <item name="colorMaterial100">@color/material_amber_100</item>
-        <item name="colorMaterial300">@color/material_amber_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Blue">
-        <item name="colorPrimary">@color/material_blue_500</item>
-        <item name="colorPrimaryDark">@color/material_blue_700</item>
-        <item name="colorAccent">@color/material_blue_accent_200</item>
-        <item name="colorMaterial100">@color/material_blue_100</item>
-        <item name="colorMaterial300">@color/material_blue_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.BlueGrey">
-        <item name="colorPrimary">@color/material_blue_grey_500</item>
-        <item name="colorPrimaryDark">@color/material_blue_grey_700</item>
-        <item name="colorAccent">@color/material_blue_grey_200</item>
-        <item name="colorMaterial100">@color/material_blue_grey_100</item>
-        <item name="colorMaterial300">@color/material_blue_grey_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Brown">
-        <item name="colorPrimary">@color/material_brown_500</item>
-        <item name="colorPrimaryDark">@color/material_brown_700</item>
-        <item name="colorAccent">@color/material_brown_200</item>
-        <item name="colorMaterial100">@color/material_brown_100</item>
-        <item name="colorMaterial300">@color/material_brown_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Cyan">
-        <item name="colorPrimary">@color/material_cyan_500</item>
-        <item name="colorPrimaryDark">@color/material_cyan_700</item>
-        <item name="colorAccent">@color/material_cyan_accent_200</item>
-        <item name="colorMaterial100">@color/material_cyan_100</item>
-        <item name="colorMaterial300">@color/material_cyan_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.DeepOrange">
-        <item name="colorPrimary">@color/material_deep_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_deep_orange_700</item>
-        <item name="colorAccent">@color/material_deep_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_deep_orange_100</item>
-        <item name="colorMaterial300">@color/material_deep_orange_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.DeepPurple">
-        <item name="colorPrimary">@color/material_deep_purple_500</item>
-        <item name="colorPrimaryDark">@color/material_deep_purple_700</item>
-        <item name="colorAccent">@color/material_deep_purple_accent_200</item>
-        <item name="colorMaterial100">@color/material_deep_purple_100</item>
-        <item name="colorMaterial300">@color/material_deep_purple_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Green">
-        <item name="colorPrimary">@color/material_green_500</item>
-        <item name="colorPrimaryDark">@color/material_green_700</item>
-        <item name="colorAccent">@color/material_green_accent_200</item>
-        <item name="colorMaterial100">@color/material_green_100</item>
-        <item name="colorMaterial300">@color/material_green_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Grey">
-        <item name="colorPrimary">@color/material_grey_500</item>
-        <item name="colorPrimaryDark">@color/material_grey_700</item>
-        <item name="colorAccent">@color/material_grey_200</item>
-        <item name="colorMaterial100">@color/material_grey_100</item>
-        <item name="colorMaterial300">@color/material_grey_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Indigo">
-        <item name="colorPrimary">@color/material_indigo_500</item>
-        <item name="colorPrimaryDark">@color/material_indigo_700</item>
-        <item name="colorAccent">@color/material_indigo_accent_200</item>
-        <item name="colorMaterial100">@color/material_indigo_100</item>
-        <item name="colorMaterial300">@color/material_indigo_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.LightBlue">
-        <item name="colorPrimary">@color/material_light_blue_500</item>
-        <item name="colorPrimaryDark">@color/material_light_blue_700</item>
-        <item name="colorAccent">@color/material_light_blue_accent_200</item>
-        <item name="colorMaterial100">@color/material_light_blue_100</item>
-        <item name="colorMaterial300">@color/material_light_blue_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.LightGreen">
-        <item name="colorPrimary">@color/material_light_green_500</item>
-        <item name="colorPrimaryDark">@color/material_light_green_700</item>
-        <item name="colorAccent">@color/material_light_green_accent_200</item>
-        <item name="colorMaterial100">@color/material_light_green_100</item>
-        <item name="colorMaterial300">@color/material_light_green_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Lime">
-        <item name="colorPrimary">@color/material_lime_500</item>
-        <item name="colorPrimaryDark">@color/material_lime_700</item>
-        <item name="colorAccent">@color/material_lime_accent_200</item>
-        <item name="colorMaterial100">@color/material_lime_100</item>
-        <item name="colorMaterial300">@color/material_lime_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Orange">
-        <item name="colorPrimary">@color/material_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_orange_700</item>
-        <item name="colorAccent">@color/material_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_orange_100</item>
-        <item name="colorMaterial300">@color/material_orange_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Purple">
-        <item name="colorPrimary">@color/material_purple_500</item>
-        <item name="colorPrimaryDark">@color/material_purple_700</item>
-        <item name="colorAccent">@color/material_purple_accent_200</item>
-        <item name="colorMaterial100">@color/material_purple_100</item>
-        <item name="colorMaterial300">@color/material_purple_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Red">
-        <item name="colorPrimary">@color/material_red_500</item>
-        <item name="colorPrimaryDark">@color/material_red_700</item>
-        <item name="colorAccent">@color/material_red_accent_200</item>
-        <item name="colorMaterial100">@color/material_red_100</item>
-        <item name="colorMaterial300">@color/material_red_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Teal">
-        <item name="colorPrimary">@color/material_teal_500</item>
-        <item name="colorPrimaryDark">@color/material_teal_700</item>
-        <item name="colorAccent">@color/material_teal_accent_200</item>
-        <item name="colorMaterial100">@color/material_teal_100</item>
-        <item name="colorMaterial300">@color/material_teal_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Yellow">
-        <item name="colorPrimary">@color/material_yellow_500</item>
-        <item name="colorPrimaryDark">@color/material_yellow_700</item>
-        <item name="colorAccent">@color/material_yellow_accent_200</item>
-        <item name="colorMaterial100">@color/material_yellow_100</item>
-        <item name="colorMaterial300">@color/material_yellow_300</item>
-        <item name="colorOnPrimarySurface">@color/black</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Black">
-        <item name="colorPrimary">@color/material_light_black</item>
-        <item name="colorPrimaryDark">@color/black</item>
-        <item name="colorAccent">@color/white</item>
-        <item name="colorMaterial100">@color/fab_color_progress</item>
-        <item name="colorMaterial300">@color/material_light_black</item>
-
-        <item name="pref_categoryColor">?android:textColorPrimary</item>
-        <item name="android:textColorLink">?attr/accentOrTextSecondary</item>
-        <item name="fabColorBackground">?colorPrimaryDark</item>
-        <item name="selectedColorPrimary">@color/white</item>
-        <item name="itemShapeFillColor">#616161</item>
-
-        <item name="accentOrTextSecondary">?android:textColorSecondary</item>
-        <item name="accentOrTextPrimary">?android:textColorPrimary</item>
-        <item name="primaryOrTextSecondary">?android:textColorSecondary</item>
-        <item name="primaryOrTextPrimary">?android:textColorPrimary</item>
-    </style>
-
-
-    <style name="Theme.SagerNet.Dialog.LightBlack">
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryDark">@color/material_light_white</item>
-        <item name="colorAccent">@color/black</item>
-        <item name="colorMaterial300">@color/white</item>
-
-        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>
-        <item name="selectedColorPrimary">@color/black</item>
-        <item name="whiteOrTextPrimary">?android:textColorPrimary</item>
-        <item name="fabColorBackground">@color/white</item>
-
-        <item name="tabTextColor">?android:textColorSecondary</item>
-        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
-        <item name="tabIndicatorColor">@color/black</item>
-        <item name="tabRippleColor">@android:color/transparent</item>
-
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
-        <item name="itemShapeFillColor">#E0E0E0</item>
-
-        <item name="colorMaterial100">@color/fab_color_progress</item>
-        <item name="pref_categoryColor">?android:textColorPrimary</item>
-        <item name="android:textColorLink">?attr/accentOrTextSecondary</item>
-
-        <item name="accentOrTextSecondary">?android:textColorSecondary</item>
-        <item name="accentOrTextPrimary">?android:textColorPrimary</item>
-        <item name="primaryOrTextSecondary">?android:textColorSecondary</item>
-        <item name="primaryOrTextPrimary">?android:textColorPrimary</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Amber">
-        <item name="colorPrimary">@color/material_amber_500</item>
-        <item name="colorPrimaryDark">@color/material_amber_700</item>
-        <item name="colorAccent">@color/material_amber_accent_200</item>
-        <item name="colorMaterial100">@color/material_amber_100</item>
-        <item name="colorMaterial300">@color/material_amber_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Blue">
-        <item name="colorPrimary">@color/material_blue_500</item>
-        <item name="colorPrimaryDark">@color/material_blue_700</item>
-        <item name="colorAccent">@color/material_blue_accent_200</item>
-        <item name="colorMaterial100">@color/material_blue_100</item>
-        <item name="colorMaterial300">@color/material_blue_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.BlueGrey">
-        <item name="colorPrimary">@color/material_blue_grey_500</item>
-        <item name="colorPrimaryDark">@color/material_blue_grey_700</item>
-        <item name="colorAccent">@color/material_blue_grey_200</item>
-        <item name="colorMaterial100">@color/material_blue_grey_100</item>
-        <item name="colorMaterial300">@color/material_blue_grey_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Brown">
-        <item name="colorPrimary">@color/material_brown_500</item>
-        <item name="colorPrimaryDark">@color/material_brown_700</item>
-        <item name="colorAccent">@color/material_brown_200</item>
-        <item name="colorMaterial100">@color/material_brown_100</item>
-        <item name="colorMaterial300">@color/material_brown_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Cyan">
-        <item name="colorPrimary">@color/material_cyan_500</item>
-        <item name="colorPrimaryDark">@color/material_cyan_700</item>
-        <item name="colorAccent">@color/material_cyan_accent_200</item>
-        <item name="colorMaterial100">@color/material_cyan_100</item>
-        <item name="colorMaterial300">@color/material_cyan_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.DeepOrange">
-        <item name="colorPrimary">@color/material_deep_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_deep_orange_700</item>
-        <item name="colorAccent">@color/material_deep_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_deep_orange_100</item>
-        <item name="colorMaterial300">@color/material_deep_orange_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.DeepPurple">
-        <item name="colorPrimary">@color/material_deep_purple_500</item>
-        <item name="colorPrimaryDark">@color/material_deep_purple_700</item>
-        <item name="colorAccent">@color/material_deep_purple_accent_200</item>
-        <item name="colorMaterial100">@color/material_deep_purple_100</item>
-        <item name="colorMaterial300">@color/material_deep_purple_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Green">
-        <item name="colorPrimary">@color/material_green_500</item>
-        <item name="colorPrimaryDark">@color/material_green_700</item>
-        <item name="colorAccent">@color/material_green_accent_200</item>
-        <item name="colorMaterial100">@color/material_green_100</item>
-        <item name="colorMaterial300">@color/material_green_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Grey">
-        <item name="colorPrimary">@color/material_grey_500</item>
-        <item name="colorPrimaryDark">@color/material_grey_700</item>
-        <item name="colorAccent">@color/material_grey_200</item>
-        <item name="colorMaterial100">@color/material_grey_100</item>
-        <item name="colorMaterial300">@color/material_grey_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Indigo">
-        <item name="colorPrimary">@color/material_indigo_500</item>
-        <item name="colorPrimaryDark">@color/material_indigo_700</item>
-        <item name="colorAccent">@color/material_indigo_accent_200</item>
-        <item name="colorMaterial100">@color/material_indigo_100</item>
-        <item name="colorMaterial300">@color/material_indigo_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.LightBlue">
-        <item name="colorPrimary">@color/material_light_blue_500</item>
-        <item name="colorPrimaryDark">@color/material_light_blue_700</item>
-        <item name="colorAccent">@color/material_light_blue_accent_200</item>
-        <item name="colorMaterial100">@color/material_light_blue_100</item>
-        <item name="colorMaterial300">@color/material_light_blue_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.LightGreen">
-        <item name="colorPrimary">@color/material_light_green_500</item>
-        <item name="colorPrimaryDark">@color/material_light_green_700</item>
-        <item name="colorAccent">@color/material_light_green_accent_200</item>
-        <item name="colorMaterial100">@color/material_light_green_100</item>
-        <item name="colorMaterial300">@color/material_light_green_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Lime">
-        <item name="colorPrimary">@color/material_lime_500</item>
-        <item name="colorPrimaryDark">@color/material_lime_700</item>
-        <item name="colorAccent">@color/material_lime_accent_200</item>
-        <item name="colorMaterial100">@color/material_lime_100</item>
-        <item name="colorMaterial300">@color/material_lime_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Orange">
-        <item name="colorPrimary">@color/material_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_orange_700</item>
-        <item name="colorAccent">@color/material_orange_accent_200</item>
-        <item name="colorMaterial100">@color/material_orange_100</item>
-        <item name="colorMaterial300">@color/material_orange_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Purple">
-        <item name="colorPrimary">@color/material_purple_500</item>
-        <item name="colorPrimaryDark">@color/material_purple_700</item>
-        <item name="colorAccent">@color/material_purple_accent_200</item>
-        <item name="colorMaterial100">@color/material_purple_100</item>
-        <item name="colorMaterial300">@color/material_purple_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Red">
-        <item name="colorPrimary">@color/material_red_500</item>
-        <item name="colorPrimaryDark">@color/material_red_700</item>
-        <item name="colorAccent">@color/material_red_accent_200</item>
-        <item name="colorMaterial100">@color/material_red_100</item>
-        <item name="colorMaterial300">@color/material_red_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Teal">
-        <item name="colorPrimary">@color/material_teal_500</item>
-        <item name="colorPrimaryDark">@color/material_teal_700</item>
-        <item name="colorAccent">@color/material_teal_accent_200</item>
-        <item name="colorMaterial100">@color/material_teal_100</item>
-        <item name="colorMaterial300">@color/material_teal_300</item>
-    </style>
-
-    <style name="Theme.SagerNet.Dialog.Yellow">
-        <item name="colorPrimary">@color/material_yellow_500</item>
-        <item name="colorPrimaryDark">@color/material_yellow_700</item>
-        <item name="colorAccent">@color/material_yellow_accent_200</item>
-        <item name="colorMaterial100">@color/material_yellow_100</item>
-        <item name="colorMaterial300">@color/material_yellow_300</item>
-        <item name="colorOnPrimarySurface">@color/black</item>
-    </style>
-
-    <style name="Theme.SagerNet.Start" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
+    <style name="Theme.Start" parent="Theme.MaterialComponents.DayNight">
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="colorPrimary">@android:color/transparent</item>
         <item name="colorPrimaryDark">@android:color/transparent</item>
@@ -531,4 +231,2047 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.SagerNet.Amber" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/amber_background</item>
+        <item name="colorError">@color/amber_error</item>
+        <item name="colorErrorContainer">@color/amber_errorContainer</item>
+        <item name="colorOnBackground">@color/amber_onBackground</item>
+        <item name="colorOnError">@color/amber_onError</item>
+        <item name="colorOnErrorContainer">@color/amber_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/amber_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/amber_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/amber_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/amber_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/amber_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/amber_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/amber_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/amber_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/amber_onTertiaryContainer</item>
+        <item name="colorOutline">@color/amber_outline</item>
+        <item name="colorOutlineVariant">@color/amber_outlineVariant</item>
+        <item name="colorPrimary">@color/amber_primary</item>
+        <item name="colorPrimaryContainer">@color/amber_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/amber_inversePrimary</item>
+        <item name="colorSecondary">@color/amber_secondary</item>
+        <item name="colorSecondaryContainer">@color/amber_secondaryContainer</item>
+        <item name="colorSurface">@color/amber_surface</item>
+        <item name="colorSurfaceInverse">@color/amber_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/amber_surfaceVariant</item>
+        <item name="colorTertiary">@color/amber_tertiary</item>
+        <item name="colorTertiaryContainer">@color/amber_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/amber_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/amber_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/amber_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/amber_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/amber_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/amber_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/amber_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/amber_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/amber_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/amber_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/amber_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/amber_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/amber_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/amber_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/amber_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/amber_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/amber_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/amber_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/amber_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Black" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/black_background</item>
+        <item name="colorError">@color/black_error</item>
+        <item name="colorErrorContainer">@color/black_errorContainer</item>
+        <item name="colorOnBackground">@color/black_onBackground</item>
+        <item name="colorOnError">@color/black_onError</item>
+        <item name="colorOnErrorContainer">@color/black_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/black_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/black_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/black_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/black_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/black_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/black_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/black_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/black_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/black_onTertiaryContainer</item>
+        <item name="colorOutline">@color/black_outline</item>
+        <item name="colorOutlineVariant">@color/black_outlineVariant</item>
+        <item name="colorPrimary">@color/black_primary</item>
+        <item name="colorPrimaryContainer">@color/black_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/black_inversePrimary</item>
+        <item name="colorSecondary">@color/black_secondary</item>
+        <item name="colorSecondaryContainer">@color/black_secondaryContainer</item>
+        <item name="colorSurface">@color/black_surface</item>
+        <item name="colorSurfaceInverse">@color/black_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/black_surfaceVariant</item>
+        <item name="colorTertiary">@color/black_tertiary</item>
+        <item name="colorTertiaryContainer">@color/black_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/black_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/black_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/black_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/black_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/black_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/black_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/black_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/black_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/black_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/black_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/black_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/black_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/black_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/black_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/black_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/black_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/black_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/black_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/black_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Blue" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/blue_background</item>
+        <item name="colorError">@color/blue_error</item>
+        <item name="colorErrorContainer">@color/blue_errorContainer</item>
+        <item name="colorOnBackground">@color/blue_onBackground</item>
+        <item name="colorOnError">@color/blue_onError</item>
+        <item name="colorOnErrorContainer">@color/blue_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/blue_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/blue_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/blue_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/blue_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/blue_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/blue_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/blue_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/blue_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/blue_onTertiaryContainer</item>
+        <item name="colorOutline">@color/blue_outline</item>
+        <item name="colorOutlineVariant">@color/blue_outlineVariant</item>
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryContainer">@color/blue_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/blue_inversePrimary</item>
+        <item name="colorSecondary">@color/blue_secondary</item>
+        <item name="colorSecondaryContainer">@color/blue_secondaryContainer</item>
+        <item name="colorSurface">@color/blue_surface</item>
+        <item name="colorSurfaceInverse">@color/blue_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/blue_surfaceVariant</item>
+        <item name="colorTertiary">@color/blue_tertiary</item>
+        <item name="colorTertiaryContainer">@color/blue_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/blue_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/blue_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/blue_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/blue_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/blue_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/blue_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/blue_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/blue_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/blue_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/blue_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/blue_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/blue_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/blue_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/blue_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/blue_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/blue_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/blue_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/blue_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/blue_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.BlueGrey" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/blue_grey_background</item>
+        <item name="colorError">@color/blue_grey_error</item>
+        <item name="colorErrorContainer">@color/blue_grey_errorContainer</item>
+        <item name="colorOnBackground">@color/blue_grey_onBackground</item>
+        <item name="colorOnError">@color/blue_grey_onError</item>
+        <item name="colorOnErrorContainer">@color/blue_grey_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/blue_grey_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/blue_grey_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/blue_grey_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/blue_grey_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/blue_grey_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/blue_grey_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/blue_grey_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/blue_grey_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/blue_grey_onTertiaryContainer</item>
+        <item name="colorOutline">@color/blue_grey_outline</item>
+        <item name="colorOutlineVariant">@color/blue_grey_outlineVariant</item>
+        <item name="colorPrimary">@color/blue_grey_primary</item>
+        <item name="colorPrimaryContainer">@color/blue_grey_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/blue_grey_inversePrimary</item>
+        <item name="colorSecondary">@color/blue_grey_secondary</item>
+        <item name="colorSecondaryContainer">@color/blue_grey_secondaryContainer</item>
+        <item name="colorSurface">@color/blue_grey_surface</item>
+        <item name="colorSurfaceInverse">@color/blue_grey_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/blue_grey_surfaceVariant</item>
+        <item name="colorTertiary">@color/blue_grey_tertiary</item>
+        <item name="colorTertiaryContainer">@color/blue_grey_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/blue_grey_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/blue_grey_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/blue_grey_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/blue_grey_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/blue_grey_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/blue_grey_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/blue_grey_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/blue_grey_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/blue_grey_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/blue_grey_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/blue_grey_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/blue_grey_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/blue_grey_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/blue_grey_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/blue_grey_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/blue_grey_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/blue_grey_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/blue_grey_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/blue_grey_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Brown" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/brown_background</item>
+        <item name="colorError">@color/brown_error</item>
+        <item name="colorErrorContainer">@color/brown_errorContainer</item>
+        <item name="colorOnBackground">@color/brown_onBackground</item>
+        <item name="colorOnError">@color/brown_onError</item>
+        <item name="colorOnErrorContainer">@color/brown_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/brown_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/brown_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/brown_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/brown_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/brown_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/brown_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/brown_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/brown_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/brown_onTertiaryContainer</item>
+        <item name="colorOutline">@color/brown_outline</item>
+        <item name="colorOutlineVariant">@color/brown_outlineVariant</item>
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorPrimaryContainer">@color/brown_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/brown_inversePrimary</item>
+        <item name="colorSecondary">@color/brown_secondary</item>
+        <item name="colorSecondaryContainer">@color/brown_secondaryContainer</item>
+        <item name="colorSurface">@color/brown_surface</item>
+        <item name="colorSurfaceInverse">@color/brown_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/brown_surfaceVariant</item>
+        <item name="colorTertiary">@color/brown_tertiary</item>
+        <item name="colorTertiaryContainer">@color/brown_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/brown_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/brown_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/brown_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/brown_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/brown_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/brown_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/brown_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/brown_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/brown_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/brown_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/brown_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/brown_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/brown_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/brown_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/brown_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/brown_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/brown_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/brown_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/brown_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Cyan" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/cyan_background</item>
+        <item name="colorError">@color/cyan_error</item>
+        <item name="colorErrorContainer">@color/cyan_errorContainer</item>
+        <item name="colorOnBackground">@color/cyan_onBackground</item>
+        <item name="colorOnError">@color/cyan_onError</item>
+        <item name="colorOnErrorContainer">@color/cyan_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/cyan_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/cyan_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/cyan_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/cyan_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/cyan_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/cyan_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/cyan_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/cyan_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/cyan_onTertiaryContainer</item>
+        <item name="colorOutline">@color/cyan_outline</item>
+        <item name="colorOutlineVariant">@color/cyan_outlineVariant</item>
+        <item name="colorPrimary">@color/cyan_primary</item>
+        <item name="colorPrimaryContainer">@color/cyan_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/cyan_inversePrimary</item>
+        <item name="colorSecondary">@color/cyan_secondary</item>
+        <item name="colorSecondaryContainer">@color/cyan_secondaryContainer</item>
+        <item name="colorSurface">@color/cyan_surface</item>
+        <item name="colorSurfaceInverse">@color/cyan_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/cyan_surfaceVariant</item>
+        <item name="colorTertiary">@color/cyan_tertiary</item>
+        <item name="colorTertiaryContainer">@color/cyan_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/cyan_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/cyan_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/cyan_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/cyan_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/cyan_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/cyan_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/cyan_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/cyan_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/cyan_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/cyan_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/cyan_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/cyan_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/cyan_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/cyan_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/cyan_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/cyan_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/cyan_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/cyan_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/cyan_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.DeepOrange" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/deep_orange_background</item>
+        <item name="colorError">@color/deep_orange_error</item>
+        <item name="colorErrorContainer">@color/deep_orange_errorContainer</item>
+        <item name="colorOnBackground">@color/deep_orange_onBackground</item>
+        <item name="colorOnError">@color/deep_orange_onError</item>
+        <item name="colorOnErrorContainer">@color/deep_orange_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/deep_orange_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/deep_orange_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/deep_orange_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/deep_orange_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/deep_orange_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/deep_orange_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/deep_orange_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/deep_orange_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/deep_orange_onTertiaryContainer</item>
+        <item name="colorOutline">@color/deep_orange_outline</item>
+        <item name="colorOutlineVariant">@color/deep_orange_outlineVariant</item>
+        <item name="colorPrimary">@color/deep_orange_primary</item>
+        <item name="colorPrimaryContainer">@color/deep_orange_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/deep_orange_inversePrimary</item>
+        <item name="colorSecondary">@color/deep_orange_secondary</item>
+        <item name="colorSecondaryContainer">@color/deep_orange_secondaryContainer</item>
+        <item name="colorSurface">@color/deep_orange_surface</item>
+        <item name="colorSurfaceInverse">@color/deep_orange_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/deep_orange_surfaceVariant</item>
+        <item name="colorTertiary">@color/deep_orange_tertiary</item>
+        <item name="colorTertiaryContainer">@color/deep_orange_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/deep_orange_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/deep_orange_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/deep_orange_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/deep_orange_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/deep_orange_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/deep_orange_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/deep_orange_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/deep_orange_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/deep_orange_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/deep_orange_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/deep_orange_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/deep_orange_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/deep_orange_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/deep_orange_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/deep_orange_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/deep_orange_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/deep_orange_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/deep_orange_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/deep_orange_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.DeepPurple" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/deep_purple_background</item>
+        <item name="colorError">@color/deep_purple_error</item>
+        <item name="colorErrorContainer">@color/deep_purple_errorContainer</item>
+        <item name="colorOnBackground">@color/deep_purple_onBackground</item>
+        <item name="colorOnError">@color/deep_purple_onError</item>
+        <item name="colorOnErrorContainer">@color/deep_purple_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/deep_purple_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/deep_purple_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/deep_purple_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/deep_purple_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/deep_purple_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/deep_purple_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/deep_purple_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/deep_purple_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/deep_purple_onTertiaryContainer</item>
+        <item name="colorOutline">@color/deep_purple_outline</item>
+        <item name="colorOutlineVariant">@color/deep_purple_outlineVariant</item>
+        <item name="colorPrimary">@color/deep_purple_primary</item>
+        <item name="colorPrimaryContainer">@color/deep_purple_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/deep_purple_inversePrimary</item>
+        <item name="colorSecondary">@color/deep_purple_secondary</item>
+        <item name="colorSecondaryContainer">@color/deep_purple_secondaryContainer</item>
+        <item name="colorSurface">@color/deep_purple_surface</item>
+        <item name="colorSurfaceInverse">@color/deep_purple_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/deep_purple_surfaceVariant</item>
+        <item name="colorTertiary">@color/deep_purple_tertiary</item>
+        <item name="colorTertiaryContainer">@color/deep_purple_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/deep_purple_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/deep_purple_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/deep_purple_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/deep_purple_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/deep_purple_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/deep_purple_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/deep_purple_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/deep_purple_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/deep_purple_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/deep_purple_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/deep_purple_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/deep_purple_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/deep_purple_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/deep_purple_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/deep_purple_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/deep_purple_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/deep_purple_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/deep_purple_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/deep_purple_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Amber" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/amber_background</item>
+        <item name="colorError">@color/amber_error</item>
+        <item name="colorErrorContainer">@color/amber_errorContainer</item>
+        <item name="colorOnBackground">@color/amber_onBackground</item>
+        <item name="colorOnError">@color/amber_onError</item>
+        <item name="colorOnErrorContainer">@color/amber_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/amber_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/amber_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/amber_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/amber_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/amber_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/amber_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/amber_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/amber_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/amber_onTertiaryContainer</item>
+        <item name="colorOutline">@color/amber_outline</item>
+        <item name="colorOutlineVariant">@color/amber_outlineVariant</item>
+        <item name="colorPrimary">@color/amber_primary</item>
+        <item name="colorPrimaryContainer">@color/amber_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/amber_inversePrimary</item>
+        <item name="colorSecondary">@color/amber_secondary</item>
+        <item name="colorSecondaryContainer">@color/amber_secondaryContainer</item>
+        <item name="colorSurface">@color/amber_surface</item>
+        <item name="colorSurfaceInverse">@color/amber_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/amber_surfaceVariant</item>
+        <item name="colorTertiary">@color/amber_tertiary</item>
+        <item name="colorTertiaryContainer">@color/amber_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/amber_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/amber_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/amber_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/amber_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/amber_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/amber_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/amber_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/amber_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/amber_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/amber_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/amber_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/amber_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/amber_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/amber_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/amber_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/amber_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/amber_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/amber_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/amber_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Black" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/black_background</item>
+        <item name="colorError">@color/black_error</item>
+        <item name="colorErrorContainer">@color/black_errorContainer</item>
+        <item name="colorOnBackground">@color/black_onBackground</item>
+        <item name="colorOnError">@color/black_onError</item>
+        <item name="colorOnErrorContainer">@color/black_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/black_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/black_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/black_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/black_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/black_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/black_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/black_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/black_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/black_onTertiaryContainer</item>
+        <item name="colorOutline">@color/black_outline</item>
+        <item name="colorOutlineVariant">@color/black_outlineVariant</item>
+        <item name="colorPrimary">@color/black_primary</item>
+        <item name="colorPrimaryContainer">@color/black_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/black_inversePrimary</item>
+        <item name="colorSecondary">@color/black_secondary</item>
+        <item name="colorSecondaryContainer">@color/black_secondaryContainer</item>
+        <item name="colorSurface">@color/black_surface</item>
+        <item name="colorSurfaceInverse">@color/black_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/black_surfaceVariant</item>
+        <item name="colorTertiary">@color/black_tertiary</item>
+        <item name="colorTertiaryContainer">@color/black_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/black_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/black_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/black_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/black_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/black_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/black_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/black_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/black_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/black_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/black_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/black_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/black_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/black_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/black_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/black_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/black_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/black_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/black_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/black_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Blue" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/blue_background</item>
+        <item name="colorError">@color/blue_error</item>
+        <item name="colorErrorContainer">@color/blue_errorContainer</item>
+        <item name="colorOnBackground">@color/blue_onBackground</item>
+        <item name="colorOnError">@color/blue_onError</item>
+        <item name="colorOnErrorContainer">@color/blue_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/blue_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/blue_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/blue_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/blue_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/blue_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/blue_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/blue_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/blue_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/blue_onTertiaryContainer</item>
+        <item name="colorOutline">@color/blue_outline</item>
+        <item name="colorOutlineVariant">@color/blue_outlineVariant</item>
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryContainer">@color/blue_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/blue_inversePrimary</item>
+        <item name="colorSecondary">@color/blue_secondary</item>
+        <item name="colorSecondaryContainer">@color/blue_secondaryContainer</item>
+        <item name="colorSurface">@color/blue_surface</item>
+        <item name="colorSurfaceInverse">@color/blue_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/blue_surfaceVariant</item>
+        <item name="colorTertiary">@color/blue_tertiary</item>
+        <item name="colorTertiaryContainer">@color/blue_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/blue_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/blue_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/blue_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/blue_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/blue_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/blue_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/blue_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/blue_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/blue_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/blue_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/blue_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/blue_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/blue_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/blue_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/blue_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/blue_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/blue_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/blue_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/blue_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.BlueGrey" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/blue_grey_background</item>
+        <item name="colorError">@color/blue_grey_error</item>
+        <item name="colorErrorContainer">@color/blue_grey_errorContainer</item>
+        <item name="colorOnBackground">@color/blue_grey_onBackground</item>
+        <item name="colorOnError">@color/blue_grey_onError</item>
+        <item name="colorOnErrorContainer">@color/blue_grey_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/blue_grey_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/blue_grey_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/blue_grey_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/blue_grey_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/blue_grey_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/blue_grey_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/blue_grey_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/blue_grey_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/blue_grey_onTertiaryContainer</item>
+        <item name="colorOutline">@color/blue_grey_outline</item>
+        <item name="colorOutlineVariant">@color/blue_grey_outlineVariant</item>
+        <item name="colorPrimary">@color/blue_grey_primary</item>
+        <item name="colorPrimaryContainer">@color/blue_grey_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/blue_grey_inversePrimary</item>
+        <item name="colorSecondary">@color/blue_grey_secondary</item>
+        <item name="colorSecondaryContainer">@color/blue_grey_secondaryContainer</item>
+        <item name="colorSurface">@color/blue_grey_surface</item>
+        <item name="colorSurfaceInverse">@color/blue_grey_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/blue_grey_surfaceVariant</item>
+        <item name="colorTertiary">@color/blue_grey_tertiary</item>
+        <item name="colorTertiaryContainer">@color/blue_grey_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/blue_grey_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/blue_grey_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/blue_grey_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/blue_grey_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/blue_grey_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/blue_grey_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/blue_grey_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/blue_grey_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/blue_grey_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/blue_grey_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/blue_grey_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/blue_grey_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/blue_grey_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/blue_grey_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/blue_grey_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/blue_grey_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/blue_grey_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/blue_grey_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/blue_grey_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Brown" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/brown_background</item>
+        <item name="colorError">@color/brown_error</item>
+        <item name="colorErrorContainer">@color/brown_errorContainer</item>
+        <item name="colorOnBackground">@color/brown_onBackground</item>
+        <item name="colorOnError">@color/brown_onError</item>
+        <item name="colorOnErrorContainer">@color/brown_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/brown_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/brown_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/brown_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/brown_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/brown_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/brown_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/brown_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/brown_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/brown_onTertiaryContainer</item>
+        <item name="colorOutline">@color/brown_outline</item>
+        <item name="colorOutlineVariant">@color/brown_outlineVariant</item>
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorPrimaryContainer">@color/brown_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/brown_inversePrimary</item>
+        <item name="colorSecondary">@color/brown_secondary</item>
+        <item name="colorSecondaryContainer">@color/brown_secondaryContainer</item>
+        <item name="colorSurface">@color/brown_surface</item>
+        <item name="colorSurfaceInverse">@color/brown_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/brown_surfaceVariant</item>
+        <item name="colorTertiary">@color/brown_tertiary</item>
+        <item name="colorTertiaryContainer">@color/brown_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/brown_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/brown_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/brown_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/brown_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/brown_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/brown_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/brown_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/brown_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/brown_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/brown_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/brown_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/brown_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/brown_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/brown_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/brown_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/brown_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/brown_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/brown_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/brown_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Cyan" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/cyan_background</item>
+        <item name="colorError">@color/cyan_error</item>
+        <item name="colorErrorContainer">@color/cyan_errorContainer</item>
+        <item name="colorOnBackground">@color/cyan_onBackground</item>
+        <item name="colorOnError">@color/cyan_onError</item>
+        <item name="colorOnErrorContainer">@color/cyan_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/cyan_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/cyan_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/cyan_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/cyan_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/cyan_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/cyan_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/cyan_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/cyan_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/cyan_onTertiaryContainer</item>
+        <item name="colorOutline">@color/cyan_outline</item>
+        <item name="colorOutlineVariant">@color/cyan_outlineVariant</item>
+        <item name="colorPrimary">@color/cyan_primary</item>
+        <item name="colorPrimaryContainer">@color/cyan_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/cyan_inversePrimary</item>
+        <item name="colorSecondary">@color/cyan_secondary</item>
+        <item name="colorSecondaryContainer">@color/cyan_secondaryContainer</item>
+        <item name="colorSurface">@color/cyan_surface</item>
+        <item name="colorSurfaceInverse">@color/cyan_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/cyan_surfaceVariant</item>
+        <item name="colorTertiary">@color/cyan_tertiary</item>
+        <item name="colorTertiaryContainer">@color/cyan_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/cyan_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/cyan_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/cyan_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/cyan_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/cyan_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/cyan_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/cyan_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/cyan_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/cyan_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/cyan_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/cyan_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/cyan_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/cyan_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/cyan_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/cyan_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/cyan_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/cyan_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/cyan_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/cyan_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.DeepOrange" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/deep_orange_background</item>
+        <item name="colorError">@color/deep_orange_error</item>
+        <item name="colorErrorContainer">@color/deep_orange_errorContainer</item>
+        <item name="colorOnBackground">@color/deep_orange_onBackground</item>
+        <item name="colorOnError">@color/deep_orange_onError</item>
+        <item name="colorOnErrorContainer">@color/deep_orange_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/deep_orange_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/deep_orange_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/deep_orange_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/deep_orange_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/deep_orange_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/deep_orange_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/deep_orange_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/deep_orange_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/deep_orange_onTertiaryContainer</item>
+        <item name="colorOutline">@color/deep_orange_outline</item>
+        <item name="colorOutlineVariant">@color/deep_orange_outlineVariant</item>
+        <item name="colorPrimary">@color/deep_orange_primary</item>
+        <item name="colorPrimaryContainer">@color/deep_orange_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/deep_orange_inversePrimary</item>
+        <item name="colorSecondary">@color/deep_orange_secondary</item>
+        <item name="colorSecondaryContainer">@color/deep_orange_secondaryContainer</item>
+        <item name="colorSurface">@color/deep_orange_surface</item>
+        <item name="colorSurfaceInverse">@color/deep_orange_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/deep_orange_surfaceVariant</item>
+        <item name="colorTertiary">@color/deep_orange_tertiary</item>
+        <item name="colorTertiaryContainer">@color/deep_orange_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/deep_orange_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/deep_orange_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/deep_orange_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/deep_orange_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/deep_orange_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/deep_orange_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/deep_orange_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/deep_orange_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/deep_orange_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/deep_orange_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/deep_orange_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/deep_orange_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/deep_orange_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/deep_orange_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/deep_orange_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/deep_orange_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/deep_orange_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/deep_orange_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/deep_orange_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.DeepPurple" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/deep_purple_background</item>
+        <item name="colorError">@color/deep_purple_error</item>
+        <item name="colorErrorContainer">@color/deep_purple_errorContainer</item>
+        <item name="colorOnBackground">@color/deep_purple_onBackground</item>
+        <item name="colorOnError">@color/deep_purple_onError</item>
+        <item name="colorOnErrorContainer">@color/deep_purple_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/deep_purple_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/deep_purple_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/deep_purple_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/deep_purple_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/deep_purple_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/deep_purple_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/deep_purple_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/deep_purple_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/deep_purple_onTertiaryContainer</item>
+        <item name="colorOutline">@color/deep_purple_outline</item>
+        <item name="colorOutlineVariant">@color/deep_purple_outlineVariant</item>
+        <item name="colorPrimary">@color/deep_purple_primary</item>
+        <item name="colorPrimaryContainer">@color/deep_purple_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/deep_purple_inversePrimary</item>
+        <item name="colorSecondary">@color/deep_purple_secondary</item>
+        <item name="colorSecondaryContainer">@color/deep_purple_secondaryContainer</item>
+        <item name="colorSurface">@color/deep_purple_surface</item>
+        <item name="colorSurfaceInverse">@color/deep_purple_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/deep_purple_surfaceVariant</item>
+        <item name="colorTertiary">@color/deep_purple_tertiary</item>
+        <item name="colorTertiaryContainer">@color/deep_purple_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/deep_purple_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/deep_purple_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/deep_purple_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/deep_purple_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/deep_purple_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/deep_purple_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/deep_purple_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/deep_purple_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/deep_purple_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/deep_purple_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/deep_purple_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/deep_purple_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/deep_purple_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/deep_purple_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/deep_purple_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/deep_purple_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/deep_purple_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/deep_purple_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/deep_purple_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Green" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/green_background</item>
+        <item name="colorError">@color/green_error</item>
+        <item name="colorErrorContainer">@color/green_errorContainer</item>
+        <item name="colorOnBackground">@color/green_onBackground</item>
+        <item name="colorOnError">@color/green_onError</item>
+        <item name="colorOnErrorContainer">@color/green_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/green_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/green_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/green_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/green_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/green_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/green_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/green_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/green_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/green_onTertiaryContainer</item>
+        <item name="colorOutline">@color/green_outline</item>
+        <item name="colorOutlineVariant">@color/green_outlineVariant</item>
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryContainer">@color/green_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/green_inversePrimary</item>
+        <item name="colorSecondary">@color/green_secondary</item>
+        <item name="colorSecondaryContainer">@color/green_secondaryContainer</item>
+        <item name="colorSurface">@color/green_surface</item>
+        <item name="colorSurfaceInverse">@color/green_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/green_surfaceVariant</item>
+        <item name="colorTertiary">@color/green_tertiary</item>
+        <item name="colorTertiaryContainer">@color/green_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/green_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/green_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/green_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/green_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/green_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/green_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/green_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/green_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/green_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/green_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/green_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/green_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/green_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/green_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/green_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/green_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/green_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/green_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/green_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Grey" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/grey_background</item>
+        <item name="colorError">@color/grey_error</item>
+        <item name="colorErrorContainer">@color/grey_errorContainer</item>
+        <item name="colorOnBackground">@color/grey_onBackground</item>
+        <item name="colorOnError">@color/grey_onError</item>
+        <item name="colorOnErrorContainer">@color/grey_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/grey_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/grey_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/grey_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/grey_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/grey_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/grey_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/grey_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/grey_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/grey_onTertiaryContainer</item>
+        <item name="colorOutline">@color/grey_outline</item>
+        <item name="colorOutlineVariant">@color/grey_outlineVariant</item>
+        <item name="colorPrimary">@color/grey_primary</item>
+        <item name="colorPrimaryContainer">@color/grey_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/grey_inversePrimary</item>
+        <item name="colorSecondary">@color/grey_secondary</item>
+        <item name="colorSecondaryContainer">@color/grey_secondaryContainer</item>
+        <item name="colorSurface">@color/grey_surface</item>
+        <item name="colorSurfaceInverse">@color/grey_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/grey_surfaceVariant</item>
+        <item name="colorTertiary">@color/grey_tertiary</item>
+        <item name="colorTertiaryContainer">@color/grey_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/grey_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/grey_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/grey_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/grey_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/grey_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/grey_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/grey_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/grey_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/grey_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/grey_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/grey_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/grey_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/grey_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/grey_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/grey_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/grey_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/grey_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/grey_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/grey_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Indigo" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/indigo_background</item>
+        <item name="colorError">@color/indigo_error</item>
+        <item name="colorErrorContainer">@color/indigo_errorContainer</item>
+        <item name="colorOnBackground">@color/indigo_onBackground</item>
+        <item name="colorOnError">@color/indigo_onError</item>
+        <item name="colorOnErrorContainer">@color/indigo_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/indigo_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/indigo_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/indigo_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/indigo_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/indigo_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/indigo_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/indigo_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/indigo_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/indigo_onTertiaryContainer</item>
+        <item name="colorOutline">@color/indigo_outline</item>
+        <item name="colorOutlineVariant">@color/indigo_outlineVariant</item>
+        <item name="colorPrimary">@color/indigo_primary</item>
+        <item name="colorPrimaryContainer">@color/indigo_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/indigo_inversePrimary</item>
+        <item name="colorSecondary">@color/indigo_secondary</item>
+        <item name="colorSecondaryContainer">@color/indigo_secondaryContainer</item>
+        <item name="colorSurface">@color/indigo_surface</item>
+        <item name="colorSurfaceInverse">@color/indigo_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/indigo_surfaceVariant</item>
+        <item name="colorTertiary">@color/indigo_tertiary</item>
+        <item name="colorTertiaryContainer">@color/indigo_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/indigo_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/indigo_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/indigo_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/indigo_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/indigo_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/indigo_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/indigo_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/indigo_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/indigo_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/indigo_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/indigo_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/indigo_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/indigo_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/indigo_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/indigo_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/indigo_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/indigo_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/indigo_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/indigo_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.LightBlue" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/light_blue_background</item>
+        <item name="colorError">@color/light_blue_error</item>
+        <item name="colorErrorContainer">@color/light_blue_errorContainer</item>
+        <item name="colorOnBackground">@color/light_blue_onBackground</item>
+        <item name="colorOnError">@color/light_blue_onError</item>
+        <item name="colorOnErrorContainer">@color/light_blue_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/light_blue_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/light_blue_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/light_blue_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/light_blue_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/light_blue_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/light_blue_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/light_blue_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/light_blue_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/light_blue_onTertiaryContainer</item>
+        <item name="colorOutline">@color/light_blue_outline</item>
+        <item name="colorOutlineVariant">@color/light_blue_outlineVariant</item>
+        <item name="colorPrimary">@color/light_blue_primary</item>
+        <item name="colorPrimaryContainer">@color/light_blue_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/light_blue_inversePrimary</item>
+        <item name="colorSecondary">@color/light_blue_secondary</item>
+        <item name="colorSecondaryContainer">@color/light_blue_secondaryContainer</item>
+        <item name="colorSurface">@color/light_blue_surface</item>
+        <item name="colorSurfaceInverse">@color/light_blue_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/light_blue_surfaceVariant</item>
+        <item name="colorTertiary">@color/light_blue_tertiary</item>
+        <item name="colorTertiaryContainer">@color/light_blue_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/light_blue_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/light_blue_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/light_blue_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/light_blue_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/light_blue_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/light_blue_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/light_blue_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/light_blue_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/light_blue_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/light_blue_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/light_blue_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/light_blue_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/light_blue_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/light_blue_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/light_blue_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/light_blue_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/light_blue_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/light_blue_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/light_blue_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.LightGreen" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/light_green_background</item>
+        <item name="colorError">@color/light_green_error</item>
+        <item name="colorErrorContainer">@color/light_green_errorContainer</item>
+        <item name="colorOnBackground">@color/light_green_onBackground</item>
+        <item name="colorOnError">@color/light_green_onError</item>
+        <item name="colorOnErrorContainer">@color/light_green_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/light_green_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/light_green_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/light_green_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/light_green_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/light_green_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/light_green_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/light_green_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/light_green_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/light_green_onTertiaryContainer</item>
+        <item name="colorOutline">@color/light_green_outline</item>
+        <item name="colorOutlineVariant">@color/light_green_outlineVariant</item>
+        <item name="colorPrimary">@color/light_green_primary</item>
+        <item name="colorPrimaryContainer">@color/light_green_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/light_green_inversePrimary</item>
+        <item name="colorSecondary">@color/light_green_secondary</item>
+        <item name="colorSecondaryContainer">@color/light_green_secondaryContainer</item>
+        <item name="colorSurface">@color/light_green_surface</item>
+        <item name="colorSurfaceInverse">@color/light_green_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/light_green_surfaceVariant</item>
+        <item name="colorTertiary">@color/light_green_tertiary</item>
+        <item name="colorTertiaryContainer">@color/light_green_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/light_green_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/light_green_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/light_green_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/light_green_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/light_green_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/light_green_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/light_green_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/light_green_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/light_green_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/light_green_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/light_green_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/light_green_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/light_green_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/light_green_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/light_green_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/light_green_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/light_green_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/light_green_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/light_green_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Lime" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/lime_background</item>
+        <item name="colorError">@color/lime_error</item>
+        <item name="colorErrorContainer">@color/lime_errorContainer</item>
+        <item name="colorOnBackground">@color/lime_onBackground</item>
+        <item name="colorOnError">@color/lime_onError</item>
+        <item name="colorOnErrorContainer">@color/lime_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/lime_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/lime_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/lime_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/lime_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/lime_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/lime_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/lime_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/lime_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/lime_onTertiaryContainer</item>
+        <item name="colorOutline">@color/lime_outline</item>
+        <item name="colorOutlineVariant">@color/lime_outlineVariant</item>
+        <item name="colorPrimary">@color/lime_primary</item>
+        <item name="colorPrimaryContainer">@color/lime_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/lime_inversePrimary</item>
+        <item name="colorSecondary">@color/lime_secondary</item>
+        <item name="colorSecondaryContainer">@color/lime_secondaryContainer</item>
+        <item name="colorSurface">@color/lime_surface</item>
+        <item name="colorSurfaceInverse">@color/lime_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/lime_surfaceVariant</item>
+        <item name="colorTertiary">@color/lime_tertiary</item>
+        <item name="colorTertiaryContainer">@color/lime_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/lime_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/lime_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/lime_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/lime_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/lime_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/lime_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/lime_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/lime_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/lime_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/lime_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/lime_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/lime_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/lime_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/lime_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/lime_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/lime_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/lime_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/lime_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/lime_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Orange" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/orange_background</item>
+        <item name="colorError">@color/orange_error</item>
+        <item name="colorErrorContainer">@color/orange_errorContainer</item>
+        <item name="colorOnBackground">@color/orange_onBackground</item>
+        <item name="colorOnError">@color/orange_onError</item>
+        <item name="colorOnErrorContainer">@color/orange_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/orange_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/orange_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/orange_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/orange_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/orange_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/orange_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/orange_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/orange_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/orange_onTertiaryContainer</item>
+        <item name="colorOutline">@color/orange_outline</item>
+        <item name="colorOutlineVariant">@color/orange_outlineVariant</item>
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryContainer">@color/orange_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/orange_inversePrimary</item>
+        <item name="colorSecondary">@color/orange_secondary</item>
+        <item name="colorSecondaryContainer">@color/orange_secondaryContainer</item>
+        <item name="colorSurface">@color/orange_surface</item>
+        <item name="colorSurfaceInverse">@color/orange_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/orange_surfaceVariant</item>
+        <item name="colorTertiary">@color/orange_tertiary</item>
+        <item name="colorTertiaryContainer">@color/orange_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/orange_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/orange_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/orange_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/orange_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/orange_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/orange_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/orange_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/orange_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/orange_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/orange_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/orange_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/orange_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/orange_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/orange_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/orange_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/orange_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/orange_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/orange_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/orange_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Pink_SSR" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/pink_background</item>
+        <item name="colorError">@color/pink_error</item>
+        <item name="colorErrorContainer">@color/pink_errorContainer</item>
+        <item name="colorOnBackground">@color/pink_onBackground</item>
+        <item name="colorOnError">@color/pink_onError</item>
+        <item name="colorOnErrorContainer">@color/pink_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/pink_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/pink_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/pink_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/pink_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/pink_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/pink_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/pink_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/pink_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/pink_onTertiaryContainer</item>
+        <item name="colorOutline">@color/pink_outline</item>
+        <item name="colorOutlineVariant">@color/pink_outlineVariant</item>
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryContainer">@color/pink_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/pink_inversePrimary</item>
+        <item name="colorSecondary">@color/pink_secondary</item>
+        <item name="colorSecondaryContainer">@color/pink_secondaryContainer</item>
+        <item name="colorSurface">@color/pink_surface</item>
+        <item name="colorSurfaceInverse">@color/pink_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/pink_surfaceVariant</item>
+        <item name="colorTertiary">@color/pink_tertiary</item>
+        <item name="colorTertiaryContainer">@color/pink_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/pink_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/pink_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/pink_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/pink_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/pink_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/pink_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/pink_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/pink_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/pink_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/pink_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/pink_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/pink_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/pink_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/pink_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/pink_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/pink_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/pink_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/pink_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/pink_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Purple" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/purple_background</item>
+        <item name="colorError">@color/purple_error</item>
+        <item name="colorErrorContainer">@color/purple_errorContainer</item>
+        <item name="colorOnBackground">@color/purple_onBackground</item>
+        <item name="colorOnError">@color/purple_onError</item>
+        <item name="colorOnErrorContainer">@color/purple_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/purple_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/purple_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/purple_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/purple_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/purple_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/purple_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/purple_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/purple_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/purple_onTertiaryContainer</item>
+        <item name="colorOutline">@color/purple_outline</item>
+        <item name="colorOutlineVariant">@color/purple_outlineVariant</item>
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryContainer">@color/purple_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/purple_inversePrimary</item>
+        <item name="colorSecondary">@color/purple_secondary</item>
+        <item name="colorSecondaryContainer">@color/purple_secondaryContainer</item>
+        <item name="colorSurface">@color/purple_surface</item>
+        <item name="colorSurfaceInverse">@color/purple_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/purple_surfaceVariant</item>
+        <item name="colorTertiary">@color/purple_tertiary</item>
+        <item name="colorTertiaryContainer">@color/purple_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/purple_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/purple_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/purple_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/purple_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/purple_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/purple_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/purple_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/purple_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/purple_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/purple_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/purple_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/purple_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/purple_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/purple_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/purple_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/purple_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/purple_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/purple_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/purple_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Red" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/red_background</item>
+        <item name="colorError">@color/red_error</item>
+        <item name="colorErrorContainer">@color/red_errorContainer</item>
+        <item name="colorOnBackground">@color/red_onBackground</item>
+        <item name="colorOnError">@color/red_onError</item>
+        <item name="colorOnErrorContainer">@color/red_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/red_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/red_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/red_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/red_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/red_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/red_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/red_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/red_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/red_onTertiaryContainer</item>
+        <item name="colorOutline">@color/red_outline</item>
+        <item name="colorOutlineVariant">@color/red_outlineVariant</item>
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryContainer">@color/red_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/red_inversePrimary</item>
+        <item name="colorSecondary">@color/red_secondary</item>
+        <item name="colorSecondaryContainer">@color/red_secondaryContainer</item>
+        <item name="colorSurface">@color/red_surface</item>
+        <item name="colorSurfaceInverse">@color/red_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/red_surfaceVariant</item>
+        <item name="colorTertiary">@color/red_tertiary</item>
+        <item name="colorTertiaryContainer">@color/red_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/red_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/red_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/red_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/red_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/red_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/red_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/red_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/red_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/red_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/red_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/red_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/red_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/red_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/red_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/red_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/red_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/red_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/red_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/red_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Teal" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/teal_background</item>
+        <item name="colorError">@color/teal_error</item>
+        <item name="colorErrorContainer">@color/teal_errorContainer</item>
+        <item name="colorOnBackground">@color/teal_onBackground</item>
+        <item name="colorOnError">@color/teal_onError</item>
+        <item name="colorOnErrorContainer">@color/teal_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/teal_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/teal_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/teal_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/teal_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/teal_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/teal_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/teal_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/teal_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/teal_onTertiaryContainer</item>
+        <item name="colorOutline">@color/teal_outline</item>
+        <item name="colorOutlineVariant">@color/teal_outlineVariant</item>
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryContainer">@color/teal_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/teal_inversePrimary</item>
+        <item name="colorSecondary">@color/teal_secondary</item>
+        <item name="colorSecondaryContainer">@color/teal_secondaryContainer</item>
+        <item name="colorSurface">@color/teal_surface</item>
+        <item name="colorSurfaceInverse">@color/teal_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/teal_surfaceVariant</item>
+        <item name="colorTertiary">@color/teal_tertiary</item>
+        <item name="colorTertiaryContainer">@color/teal_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/teal_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/teal_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/teal_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/teal_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/teal_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/teal_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/teal_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/teal_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/teal_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/teal_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/teal_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/teal_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/teal_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/teal_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/teal_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/teal_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/teal_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/teal_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/teal_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Dialog.Yellow" parent="@style/Theme.SagerNet.Dialog">
+        <item name="android:colorBackground">@color/yellow_background</item>
+        <item name="colorError">@color/yellow_error</item>
+        <item name="colorErrorContainer">@color/yellow_errorContainer</item>
+        <item name="colorOnBackground">@color/yellow_onBackground</item>
+        <item name="colorOnError">@color/yellow_onError</item>
+        <item name="colorOnErrorContainer">@color/yellow_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/yellow_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/yellow_onPrimaryContainer</item>
+        <item name="colorOnPrimarySurface">@color/black</item>
+        <item name="colorOnSecondary">@color/yellow_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/yellow_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/yellow_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/yellow_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/yellow_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/yellow_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/yellow_onTertiaryContainer</item>
+        <item name="colorOutline">@color/yellow_outline</item>
+        <item name="colorOutlineVariant">@color/yellow_outlineVariant</item>
+        <item name="colorPrimary">@color/yellow_primary</item>
+        <item name="colorPrimaryContainer">@color/yellow_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/yellow_inversePrimary</item>
+        <item name="colorSecondary">@color/yellow_secondary</item>
+        <item name="colorSecondaryContainer">@color/yellow_secondaryContainer</item>
+        <item name="colorSurface">@color/yellow_surface</item>
+        <item name="colorSurfaceInverse">@color/yellow_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/yellow_surfaceVariant</item>
+        <item name="colorTertiary">@color/yellow_tertiary</item>
+        <item name="colorTertiaryContainer">@color/yellow_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/yellow_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/yellow_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/yellow_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/yellow_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/yellow_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/yellow_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/yellow_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/yellow_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/yellow_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/yellow_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/yellow_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/yellow_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/yellow_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/yellow_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/yellow_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/yellow_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/yellow_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/yellow_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/yellow_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Green" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/green_background</item>
+        <item name="colorError">@color/green_error</item>
+        <item name="colorErrorContainer">@color/green_errorContainer</item>
+        <item name="colorOnBackground">@color/green_onBackground</item>
+        <item name="colorOnError">@color/green_onError</item>
+        <item name="colorOnErrorContainer">@color/green_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/green_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/green_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/green_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/green_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/green_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/green_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/green_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/green_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/green_onTertiaryContainer</item>
+        <item name="colorOutline">@color/green_outline</item>
+        <item name="colorOutlineVariant">@color/green_outlineVariant</item>
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryContainer">@color/green_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/green_inversePrimary</item>
+        <item name="colorSecondary">@color/green_secondary</item>
+        <item name="colorSecondaryContainer">@color/green_secondaryContainer</item>
+        <item name="colorSurface">@color/green_surface</item>
+        <item name="colorSurfaceInverse">@color/green_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/green_surfaceVariant</item>
+        <item name="colorTertiary">@color/green_tertiary</item>
+        <item name="colorTertiaryContainer">@color/green_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/green_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/green_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/green_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/green_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/green_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/green_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/green_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/green_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/green_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/green_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/green_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/green_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/green_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/green_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/green_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/green_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/green_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/green_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/green_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Grey" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/grey_background</item>
+        <item name="colorError">@color/grey_error</item>
+        <item name="colorErrorContainer">@color/grey_errorContainer</item>
+        <item name="colorOnBackground">@color/grey_onBackground</item>
+        <item name="colorOnError">@color/grey_onError</item>
+        <item name="colorOnErrorContainer">@color/grey_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/grey_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/grey_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/grey_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/grey_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/grey_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/grey_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/grey_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/grey_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/grey_onTertiaryContainer</item>
+        <item name="colorOutline">@color/grey_outline</item>
+        <item name="colorOutlineVariant">@color/grey_outlineVariant</item>
+        <item name="colorPrimary">@color/grey_primary</item>
+        <item name="colorPrimaryContainer">@color/grey_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/grey_inversePrimary</item>
+        <item name="colorSecondary">@color/grey_secondary</item>
+        <item name="colorSecondaryContainer">@color/grey_secondaryContainer</item>
+        <item name="colorSurface">@color/grey_surface</item>
+        <item name="colorSurfaceInverse">@color/grey_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/grey_surfaceVariant</item>
+        <item name="colorTertiary">@color/grey_tertiary</item>
+        <item name="colorTertiaryContainer">@color/grey_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/grey_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/grey_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/grey_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/grey_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/grey_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/grey_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/grey_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/grey_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/grey_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/grey_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/grey_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/grey_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/grey_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/grey_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/grey_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/grey_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/grey_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/grey_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/grey_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Indigo" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/indigo_background</item>
+        <item name="colorError">@color/indigo_error</item>
+        <item name="colorErrorContainer">@color/indigo_errorContainer</item>
+        <item name="colorOnBackground">@color/indigo_onBackground</item>
+        <item name="colorOnError">@color/indigo_onError</item>
+        <item name="colorOnErrorContainer">@color/indigo_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/indigo_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/indigo_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/indigo_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/indigo_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/indigo_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/indigo_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/indigo_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/indigo_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/indigo_onTertiaryContainer</item>
+        <item name="colorOutline">@color/indigo_outline</item>
+        <item name="colorOutlineVariant">@color/indigo_outlineVariant</item>
+        <item name="colorPrimary">@color/indigo_primary</item>
+        <item name="colorPrimaryContainer">@color/indigo_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/indigo_inversePrimary</item>
+        <item name="colorSecondary">@color/indigo_secondary</item>
+        <item name="colorSecondaryContainer">@color/indigo_secondaryContainer</item>
+        <item name="colorSurface">@color/indigo_surface</item>
+        <item name="colorSurfaceInverse">@color/indigo_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/indigo_surfaceVariant</item>
+        <item name="colorTertiary">@color/indigo_tertiary</item>
+        <item name="colorTertiaryContainer">@color/indigo_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/indigo_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/indigo_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/indigo_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/indigo_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/indigo_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/indigo_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/indigo_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/indigo_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/indigo_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/indigo_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/indigo_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/indigo_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/indigo_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/indigo_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/indigo_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/indigo_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/indigo_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/indigo_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/indigo_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.LightBlue" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/light_blue_background</item>
+        <item name="colorError">@color/light_blue_error</item>
+        <item name="colorErrorContainer">@color/light_blue_errorContainer</item>
+        <item name="colorOnBackground">@color/light_blue_onBackground</item>
+        <item name="colorOnError">@color/light_blue_onError</item>
+        <item name="colorOnErrorContainer">@color/light_blue_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/light_blue_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/light_blue_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/light_blue_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/light_blue_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/light_blue_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/light_blue_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/light_blue_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/light_blue_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/light_blue_onTertiaryContainer</item>
+        <item name="colorOutline">@color/light_blue_outline</item>
+        <item name="colorOutlineVariant">@color/light_blue_outlineVariant</item>
+        <item name="colorPrimary">@color/light_blue_primary</item>
+        <item name="colorPrimaryContainer">@color/light_blue_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/light_blue_inversePrimary</item>
+        <item name="colorSecondary">@color/light_blue_secondary</item>
+        <item name="colorSecondaryContainer">@color/light_blue_secondaryContainer</item>
+        <item name="colorSurface">@color/light_blue_surface</item>
+        <item name="colorSurfaceInverse">@color/light_blue_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/light_blue_surfaceVariant</item>
+        <item name="colorTertiary">@color/light_blue_tertiary</item>
+        <item name="colorTertiaryContainer">@color/light_blue_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/light_blue_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/light_blue_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/light_blue_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/light_blue_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/light_blue_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/light_blue_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/light_blue_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/light_blue_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/light_blue_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/light_blue_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/light_blue_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/light_blue_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/light_blue_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/light_blue_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/light_blue_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/light_blue_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/light_blue_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/light_blue_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/light_blue_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.LightGreen" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/light_green_background</item>
+        <item name="colorError">@color/light_green_error</item>
+        <item name="colorErrorContainer">@color/light_green_errorContainer</item>
+        <item name="colorOnBackground">@color/light_green_onBackground</item>
+        <item name="colorOnError">@color/light_green_onError</item>
+        <item name="colorOnErrorContainer">@color/light_green_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/light_green_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/light_green_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/light_green_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/light_green_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/light_green_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/light_green_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/light_green_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/light_green_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/light_green_onTertiaryContainer</item>
+        <item name="colorOutline">@color/light_green_outline</item>
+        <item name="colorOutlineVariant">@color/light_green_outlineVariant</item>
+        <item name="colorPrimary">@color/light_green_primary</item>
+        <item name="colorPrimaryContainer">@color/light_green_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/light_green_inversePrimary</item>
+        <item name="colorSecondary">@color/light_green_secondary</item>
+        <item name="colorSecondaryContainer">@color/light_green_secondaryContainer</item>
+        <item name="colorSurface">@color/light_green_surface</item>
+        <item name="colorSurfaceInverse">@color/light_green_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/light_green_surfaceVariant</item>
+        <item name="colorTertiary">@color/light_green_tertiary</item>
+        <item name="colorTertiaryContainer">@color/light_green_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/light_green_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/light_green_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/light_green_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/light_green_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/light_green_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/light_green_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/light_green_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/light_green_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/light_green_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/light_green_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/light_green_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/light_green_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/light_green_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/light_green_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/light_green_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/light_green_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/light_green_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/light_green_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/light_green_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Lime" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/lime_background</item>
+        <item name="colorError">@color/lime_error</item>
+        <item name="colorErrorContainer">@color/lime_errorContainer</item>
+        <item name="colorOnBackground">@color/lime_onBackground</item>
+        <item name="colorOnError">@color/lime_onError</item>
+        <item name="colorOnErrorContainer">@color/lime_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/lime_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/lime_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/lime_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/lime_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/lime_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/lime_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/lime_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/lime_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/lime_onTertiaryContainer</item>
+        <item name="colorOutline">@color/lime_outline</item>
+        <item name="colorOutlineVariant">@color/lime_outlineVariant</item>
+        <item name="colorPrimary">@color/lime_primary</item>
+        <item name="colorPrimaryContainer">@color/lime_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/lime_inversePrimary</item>
+        <item name="colorSecondary">@color/lime_secondary</item>
+        <item name="colorSecondaryContainer">@color/lime_secondaryContainer</item>
+        <item name="colorSurface">@color/lime_surface</item>
+        <item name="colorSurfaceInverse">@color/lime_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/lime_surfaceVariant</item>
+        <item name="colorTertiary">@color/lime_tertiary</item>
+        <item name="colorTertiaryContainer">@color/lime_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/lime_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/lime_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/lime_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/lime_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/lime_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/lime_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/lime_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/lime_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/lime_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/lime_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/lime_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/lime_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/lime_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/lime_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/lime_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/lime_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/lime_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/lime_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/lime_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Orange" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/orange_background</item>
+        <item name="colorError">@color/orange_error</item>
+        <item name="colorErrorContainer">@color/orange_errorContainer</item>
+        <item name="colorOnBackground">@color/orange_onBackground</item>
+        <item name="colorOnError">@color/orange_onError</item>
+        <item name="colorOnErrorContainer">@color/orange_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/orange_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/orange_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/orange_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/orange_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/orange_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/orange_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/orange_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/orange_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/orange_onTertiaryContainer</item>
+        <item name="colorOutline">@color/orange_outline</item>
+        <item name="colorOutlineVariant">@color/orange_outlineVariant</item>
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryContainer">@color/orange_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/orange_inversePrimary</item>
+        <item name="colorSecondary">@color/orange_secondary</item>
+        <item name="colorSecondaryContainer">@color/orange_secondaryContainer</item>
+        <item name="colorSurface">@color/orange_surface</item>
+        <item name="colorSurfaceInverse">@color/orange_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/orange_surfaceVariant</item>
+        <item name="colorTertiary">@color/orange_tertiary</item>
+        <item name="colorTertiaryContainer">@color/orange_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/orange_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/orange_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/orange_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/orange_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/orange_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/orange_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/orange_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/orange_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/orange_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/orange_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/orange_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/orange_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/orange_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/orange_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/orange_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/orange_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/orange_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/orange_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/orange_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Pink_SSR" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/pink_background</item>
+        <item name="colorError">@color/pink_error</item>
+        <item name="colorErrorContainer">@color/pink_errorContainer</item>
+        <item name="colorOnBackground">@color/pink_onBackground</item>
+        <item name="colorOnError">@color/pink_onError</item>
+        <item name="colorOnErrorContainer">@color/pink_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/pink_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/pink_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/pink_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/pink_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/pink_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/pink_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/pink_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/pink_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/pink_onTertiaryContainer</item>
+        <item name="colorOutline">@color/pink_outline</item>
+        <item name="colorOutlineVariant">@color/pink_outlineVariant</item>
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryContainer">@color/pink_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/pink_inversePrimary</item>
+        <item name="colorSecondary">@color/pink_secondary</item>
+        <item name="colorSecondaryContainer">@color/pink_secondaryContainer</item>
+        <item name="colorSurface">@color/pink_surface</item>
+        <item name="colorSurfaceInverse">@color/pink_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/pink_surfaceVariant</item>
+        <item name="colorTertiary">@color/pink_tertiary</item>
+        <item name="colorTertiaryContainer">@color/pink_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/pink_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/pink_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/pink_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/pink_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/pink_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/pink_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/pink_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/pink_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/pink_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/pink_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/pink_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/pink_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/pink_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/pink_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/pink_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/pink_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/pink_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/pink_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/pink_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Purple" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/purple_background</item>
+        <item name="colorError">@color/purple_error</item>
+        <item name="colorErrorContainer">@color/purple_errorContainer</item>
+        <item name="colorOnBackground">@color/purple_onBackground</item>
+        <item name="colorOnError">@color/purple_onError</item>
+        <item name="colorOnErrorContainer">@color/purple_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/purple_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/purple_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/purple_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/purple_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/purple_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/purple_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/purple_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/purple_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/purple_onTertiaryContainer</item>
+        <item name="colorOutline">@color/purple_outline</item>
+        <item name="colorOutlineVariant">@color/purple_outlineVariant</item>
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryContainer">@color/purple_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/purple_inversePrimary</item>
+        <item name="colorSecondary">@color/purple_secondary</item>
+        <item name="colorSecondaryContainer">@color/purple_secondaryContainer</item>
+        <item name="colorSurface">@color/purple_surface</item>
+        <item name="colorSurfaceInverse">@color/purple_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/purple_surfaceVariant</item>
+        <item name="colorTertiary">@color/purple_tertiary</item>
+        <item name="colorTertiaryContainer">@color/purple_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/purple_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/purple_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/purple_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/purple_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/purple_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/purple_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/purple_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/purple_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/purple_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/purple_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/purple_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/purple_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/purple_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/purple_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/purple_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/purple_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/purple_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/purple_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/purple_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Red" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/red_background</item>
+        <item name="colorError">@color/red_error</item>
+        <item name="colorErrorContainer">@color/red_errorContainer</item>
+        <item name="colorOnBackground">@color/red_onBackground</item>
+        <item name="colorOnError">@color/red_onError</item>
+        <item name="colorOnErrorContainer">@color/red_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/red_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/red_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/red_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/red_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/red_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/red_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/red_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/red_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/red_onTertiaryContainer</item>
+        <item name="colorOutline">@color/red_outline</item>
+        <item name="colorOutlineVariant">@color/red_outlineVariant</item>
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryContainer">@color/red_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/red_inversePrimary</item>
+        <item name="colorSecondary">@color/red_secondary</item>
+        <item name="colorSecondaryContainer">@color/red_secondaryContainer</item>
+        <item name="colorSurface">@color/red_surface</item>
+        <item name="colorSurfaceInverse">@color/red_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/red_surfaceVariant</item>
+        <item name="colorTertiary">@color/red_tertiary</item>
+        <item name="colorTertiaryContainer">@color/red_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/red_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/red_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/red_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/red_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/red_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/red_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/red_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/red_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/red_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/red_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/red_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/red_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/red_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/red_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/red_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/red_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/red_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/red_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/red_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Teal" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/teal_background</item>
+        <item name="colorError">@color/teal_error</item>
+        <item name="colorErrorContainer">@color/teal_errorContainer</item>
+        <item name="colorOnBackground">@color/teal_onBackground</item>
+        <item name="colorOnError">@color/teal_onError</item>
+        <item name="colorOnErrorContainer">@color/teal_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/teal_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/teal_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/teal_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/teal_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/teal_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/teal_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/teal_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/teal_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/teal_onTertiaryContainer</item>
+        <item name="colorOutline">@color/teal_outline</item>
+        <item name="colorOutlineVariant">@color/teal_outlineVariant</item>
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryContainer">@color/teal_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/teal_inversePrimary</item>
+        <item name="colorSecondary">@color/teal_secondary</item>
+        <item name="colorSecondaryContainer">@color/teal_secondaryContainer</item>
+        <item name="colorSurface">@color/teal_surface</item>
+        <item name="colorSurfaceInverse">@color/teal_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/teal_surfaceVariant</item>
+        <item name="colorTertiary">@color/teal_tertiary</item>
+        <item name="colorTertiaryContainer">@color/teal_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/teal_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/teal_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/teal_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/teal_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/teal_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/teal_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/teal_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/teal_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/teal_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/teal_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/teal_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/teal_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/teal_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/teal_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/teal_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/teal_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/teal_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/teal_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/teal_tertiaryFixedDim</item>
+    </style>
+    
+    <style name="Theme.SagerNet.Yellow" parent="@style/Theme.SagerNet">
+        <item name="android:colorBackground">@color/yellow_background</item>
+        <item name="colorError">@color/yellow_error</item>
+        <item name="colorErrorContainer">@color/yellow_errorContainer</item>
+        <item name="colorOnBackground">@color/yellow_onBackground</item>
+        <item name="colorOnError">@color/yellow_onError</item>
+        <item name="colorOnErrorContainer">@color/yellow_onErrorContainer</item>
+        <item name="colorOnPrimary">@color/yellow_onPrimary</item>
+        <item name="colorOnPrimaryContainer">@color/yellow_onPrimaryContainer</item>
+        <item name="colorOnSecondary">@color/yellow_onSecondary</item>
+        <item name="colorOnSecondaryContainer">@color/yellow_onSecondaryContainer</item>
+        <item name="colorOnSurface">@color/yellow_onSurface</item>
+        <item name="colorOnSurfaceInverse">@color/yellow_inverseOnSurface</item>
+        <item name="colorOnSurfaceVariant">@color/yellow_onSurfaceVariant</item>
+        <item name="colorOnTertiary">@color/yellow_onTertiary</item>
+        <item name="colorOnTertiaryContainer">@color/yellow_onTertiaryContainer</item>
+        <item name="colorOutline">@color/yellow_outline</item>
+        <item name="colorOutlineVariant">@color/yellow_outlineVariant</item>
+        <item name="colorPrimary">@color/yellow_primary</item>
+        <item name="colorPrimaryContainer">@color/yellow_primaryContainer</item>
+        <item name="colorPrimaryInverse">@color/yellow_inversePrimary</item>
+        <item name="colorSecondary">@color/yellow_secondary</item>
+        <item name="colorSecondaryContainer">@color/yellow_secondaryContainer</item>
+        <item name="colorSurface">@color/yellow_surface</item>
+        <item name="colorSurfaceInverse">@color/yellow_inverseSurface</item>
+        <item name="colorSurfaceVariant">@color/yellow_surfaceVariant</item>
+        <item name="colorTertiary">@color/yellow_tertiary</item>
+        <item name="colorTertiaryContainer">@color/yellow_tertiaryContainer</item>
+        <item name="colorOnPrimaryFixed">@color/yellow_onPrimaryFixed</item>
+        <item name="colorOnPrimaryFixedVariant">@color/yellow_onPrimaryFixedVariant</item>
+        <item name="colorOnSecondaryFixed">@color/yellow_onSecondaryFixed</item>
+        <item name="colorOnSecondaryFixedVariant">@color/yellow_onSecondaryFixedVariant</item>
+        <item name="colorOnTertiaryFixed">@color/yellow_onTertiaryFixed</item>
+        <item name="colorOnTertiaryFixedVariant">@color/yellow_onTertiaryFixedVariant</item>
+        <item name="colorPrimaryFixed">@color/yellow_primaryFixed</item>
+        <item name="colorPrimaryFixedDim">@color/yellow_primaryFixedDim</item>
+        <item name="colorSecondaryFixed">@color/yellow_secondaryFixed</item>
+        <item name="colorSecondaryFixedDim">@color/yellow_secondaryFixedDim</item>
+        <item name="colorSurfaceBright">@color/yellow_surfaceBright</item>
+        <item name="colorSurfaceContainer">@color/yellow_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/yellow_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/yellow_surfaceContainerHighest</item>
+        <item name="colorSurfaceContainerLow">@color/yellow_surfaceContainerLow</item>
+        <item name="colorSurfaceContainerLowest">@color/yellow_surfaceContainerLowest</item>
+        <item name="colorSurfaceDim">@color/yellow_surfaceDim</item>
+        <item name="colorTertiaryFixed">@color/yellow_tertiaryFixed</item>
+        <item name="colorTertiaryFixedDim">@color/yellow_tertiaryFixedDim</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+    
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <item name="android:backgroundTint">?colorSurfaceContainerHigh</item>
+    </style>
+    
+    <style name="AppTheme.Preference" parent="@style/PreferenceThemeOverlay">
+        <item name="editTextPreferenceStyle">@style/AppTheme.EditTextPreference</item>
+        <item name="preferenceCategoryStyle">@style/AppTheme.PreferenceCategory</item>
+    </style>
+    
+    <style name="AppTheme.PreferenceCategory" parent="@style/Preference.Category.Material">
+        <item name="android:layout">@layout/uwu_preference_category</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="iconSpaceReserved">false</item>
+    </style>
+    
+    <style name="AppTheme.EditTextPreference" parent="@style/Preference.DialogPreference.EditTextPreference.Material">
+        <item name="dialogLayout">@layout/uwu_dialog_edittext</item>
+        <item name="iconSpaceReserved">false</item>
+    </style>
+    
+    <style name="AppTheme.TextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCollapsedPaddingTop">0.0dip</item>
+        <item name="boxCornerRadiusBottomEnd">8.0dip</item>
+        <item name="boxCornerRadiusBottomStart">8.0dip</item>
+        <item name="boxCornerRadiusTopEnd">8.0dip</item>
+        <item name="boxCornerRadiusTopStart">8.0dip</item>
+        <item name="boxStrokeWidth">1.5dip</item>
+        <item name="boxStrokeWidthFocused">1.5dip</item>
+    </style>
+    
+    <style name="AppTheme.PopupMenu" parent="@style/Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">@drawable/uwu_bg_popup</item>
+        <item name="android:popupElevation">4.0dip</item>
+    </style>
+    
+    <style name="AppTheme.Widget.Material3.NavigationView" parent="@style/Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:background">?colorSurfaceContainerLow</item>
+        <item name="android:maxWidth">360.0dip</item>
+        <item name="bottomInsetScrimEnabled">false</item>
+        <item name="dividerInsetEnd">28.0dip</item>
+        <item name="dividerInsetStart">28.0dip</item>
+        <item name="drawerLayoutCornerSize">30.0dip</item>
+        <item name="elevation">0.0dip</item>
+        <item name="itemHorizontalPadding">28.0dip</item>
+        <item name="itemIconPadding">12.0dip</item>
+        <item name="itemIconSize">24.0dip</item>
+        <item name="itemIconTint">@color/m3_navigation_item_icon_tint</item>
+        <item name="itemRippleColor">@color/m3_navigation_item_ripple_color</item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.M3.Sys.Shape.Corner.Full</item>
+        <item name="itemShapeFillColor">@color/m3_navigation_item_background_color</item>
+        <item name="itemShapeInsetBottom">0.0dip</item>
+        <item name="itemShapeInsetEnd">12.0dip</item>
+        <item name="itemShapeInsetStart">12.0dip</item>
+        <item name="itemShapeInsetTop">0.0dip</item>
+        <item name="itemTextAppearance">?textAppearanceLabelLarge</item>
+        <item name="itemTextColor">@color/m3_navigation_item_text_color</item>
+        <item name="itemVerticalPadding">4.0dip</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.NavigationView</item>
+        <item name="subheaderColor">?colorOnSurfaceVariant</item>
+        <item name="subheaderInsetEnd">28.0dip</item>
+        <item name="subheaderInsetStart">28.0dip</item>
+        <item name="subheaderTextAppearance">?textAppearanceTitleSmall</item>
+        <item name="topInsetScrimEnabled">false</item>
+        <item name="activeIndicatorLabelPadding">4.0dip</item>
+    </style>
+    
+    <style name="ShapeAppearance.M3.Sys.Shape.Corner.Full" parent="">
+        <item name="cornerFamily">?shapeCornerFamily</item>
+        <item name="cornerSize">50.0%</item>
+    </style>
+    
+    <style name="ThemeOverlay.Material3.NavigationView" parent="">
+        <item name="android:listDivider">?colorOutline</item>
+    </style>
+    
 </resources>

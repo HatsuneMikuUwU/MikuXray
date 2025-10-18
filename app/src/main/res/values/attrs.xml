@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-<resources>
+    <attr name="colorBg" format="color" />
+    <attr name="colorIcon" format="color" />
+    <attr name="colorCard" format="color" />
+    
     <attr name="colorMaterial100" format="color" />
     <attr name="colorMaterial300" format="color" />
     <attr name="accentOrTextSecondary" format="color" />
@@ -10,4 +14,79 @@
     <attr name="fabColorBackground" format="color" />
     <attr name="selectedColorPrimary" format="color" />
     <attr name="whiteOrTextPrimary" format="color" />
+
+    <declare-styleable name="SwitchButton">
+        <attr name="uwuThumbDrawable" format="reference"/>
+        <attr name="uwuThumbColor" format="color|reference"/>
+        <attr name="uwuThumbMargin" format="dimension|reference"/>
+        <attr name="uwuThumbMarginTop" format="dimension|reference"/>
+        <attr name="uwuThumbMarginBottom" format="dimension|reference"/>
+        <attr name="uwuThumbMarginLeft" format="dimension|reference"/>
+        <attr name="uwuThumbMarginRight" format="dimension|reference"/>
+        <attr name="uwuThumbWidth" format="dimension|reference"/>
+        <attr name="uwuThumbHeight" format="dimension|reference"/>
+        <attr name="uwuThumbRadius" format="dimension|reference"/>
+        <attr name="uwuBackRadius" format="dimension|reference"/>
+        <attr name="uwuBackDrawable" format="reference"/>
+        <attr name="uwuBackColor" format="color|reference"/>
+        <attr name="uwuFadeBack" format="boolean"/>
+        <attr name="uwuThumbRangeRatio" format="float"/>
+        <attr name="uwuAnimationDuration" format="integer"/>
+        <attr name="uwuTintColor" format="color|reference"/>
+        <attr name="uwuTextOn" format="string"/>
+        <attr name="uwuTextOff" format="string"/>
+        <attr name="uwuTextThumbInset" format="dimension"/>
+        <attr name="uwuTextExtra" format="dimension"/>
+        <attr name="uwuTextAdjust" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableView">
+        <attr name="expandable_visibilityMode">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="expandable_visibilityDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ParticlesView">
+        <attr
+            name="minDotRadius"
+            format="dimension" />
+        <attr
+            name="maxDotRadius"
+            format="dimension" />
+        <attr
+            name="lineThickness"
+            format="dimension" />
+        <attr
+            name="lineDistance"
+            format="dimension" />
+        <attr
+            name="numDots"
+            format="integer" />
+        <attr
+            name="dotColor"
+            format="color" />
+        <attr
+            name="lineColor"
+            format="color" />
+        <attr
+            name="frameDelayMillis"
+            format="integer" />
+        <attr
+            name="stepMultiplier"
+            format="float" />
+    </declare-styleable>
+    
+    <declare-styleable name="BlurImageView">
+        <attr name="blur_radius" format="integer" />
+    </declare-styleable>
+
 </resources>

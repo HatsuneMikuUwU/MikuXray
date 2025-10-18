@@ -1,5 +1,12 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <dimen name="qrcode_size">264dp</dimen>
+<resources>
+	<dimen name="qrcode_size">264dp</dimen>
     <dimen name="main_list_padding_bottom">88dp</dimen>
     <dimen name="bottom_sheet_padding">8dp</dimen>
+    <dimen name="mal_action_action_item_image_height">32dp</dimen>
+    <dimen name="mal_action_item_image_width">24dp</dimen>
+    <dimen name="mal_baseline">16dp</dimen>
+    <dimen name="mal_baseline_half">8dp</dimen>
+    <dimen name="mal_card_elevation">0dp</dimen>
+    <dimen name="mal_stroke_width">0dp</dimen>
+    <dimen name="mal_title_item_image_size">40dp</dimen>
 </resources>
