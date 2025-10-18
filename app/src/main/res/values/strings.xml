@@ -674,9 +674,9 @@ By HatsuneMikuUwU Development"</string>
     <string name="uwu_start">Start</string>
 
     <string name="uwu_welcome_title">Welcome to</string>
-    <string name="uwu_welcome_summary_1">MikuBox
-    A sing-box client for Android.</string>
-    <string name="uwu_welcome_summary_2">Sing-box client for Android With a Miku UI style from the UwU development.</string>
+    <string name="uwu_welcome_summary_1">MikuXray
+    A v2ray client for Android.</string>
+    <string name="uwu_welcome_summary_2">V2ray client for Android With a Miku UI style from the UwU development.</string>
     <string name="uwu_welcome_summary_3">Made with Heart, Gradle, Kotlin, Java code and more.</string>
 
     <string name="uwu_greeting_morning">Good morning...</string>
