@@ -81,6 +81,7 @@
     <string name="proxied_apps">分应用 VPN</string>
     <string name="proxied_apps_summary">从 VPN 中排除或包含所选应用</string>
     <string name="off">关闭</string>
+    <string name="on">打开</string>
     <string name="search_apps">搜索……</string>
     <string name="scanning">扫描中……</string>
     <string name="invert_selections">反选</string>
@@ -590,4 +591,50 @@
     <string name="pinned_peer_certificate_sha256_hex_dialog_message">如果证书本身无效则需要配合“跳过证书验证”使用。每行一个，hex 编码。</string>
     <string name="mtls_certificate">mTLS 证书</string>
     <string name="mtls_certificate_private_key">mTLS 证书私钥</string>
+    <!-- uwu -->
+    <string name="uwu_about_miku_summary">初音未来(Hatsune Miku) 是 Crypton Future Media 发布的基于 Vocaloid 制作的虚拟歌手, 代号CV01。以青绿色的长双马尾和清亮嗓音著称, 人设为16岁少女, 是全球知名虚拟偶像, 广泛活跃于音乐、演唱会及动画, 深受粉丝们喜爱。</string>
+    <string name="uwu_about_miku_title">谁是 Hatsune Miku?</string>
+    <string name="uwu_about_version_summary">点击此处或箭头图标, 了解应用更多信息。</string>
+    <string name="uwu_about_version_title">关于应用</string>
+    <string name="uwu_banner_settings_summary">"欢迎来到设置菜单, 
+请选择任何你
+需要的和必须
+的功能选项"</string>
+    <string name="uwu_banner_settings_title">你好呀……</string>
+    <string name="uwu_banner_summary">来和我一起唱歌吧！</string>
+    <string name="uwu_banner_title">嗨, 主人</string>
+    <string name="uwu_general_settings_title">通用设置</string>
+    <string name="uwu_maintainer_summary">HatsuneMikuUwU 开发团队</string>
+    <string name="uwu_maintainer_title">本应用由以下团队维护</string>
+    <string name="uwu_splash_summary">版本 0.16.9-UwU</string>
+    <string name="uwu_splash_title">"用心制作 ❤️
+HatsuneMikuUwU 开发组"</string>
+    <string name="uwu_theme_settings_summary">自定义强调色</string>
+    <string name="uwu_theme_settings_title">主题设置</string>
+
+    <string name="uwu_welcome_title">欢迎来到</string>
+    <string name="uwu_welcome_summary_1">MikuXray, 
+    一款适用于 Android 的 V2ray 客户端 </string>
+    <string name="uwu_welcome_summary_2">Android 上的 V2ray 客户端, 采用 UwU 开发的 Miku UI </string>
+    <string name="uwu_welcome_summary_3">使用 Heart、Gradle、Kotlin、Java 等语言制作 </string>
+
+    <string name="uwu_greeting_morning"> 早安...</string>
+    <string name="uwu_greeting_afternoon"> 午安...</string>
+    <string name="uwu_greeting_evening"> 暮安...</string>
+    <string name="uwu_greeting_night"> 晚安...</string>
+    <string name="uwu_greeting_late_night"> 该睡觉啦...</string>
+
+    <!-- miku-->
+    <string name="uwu_miku_gender_title">性别</string>
+    <string name="uwu_miku_gender_summary">女性</string>
+    <string name="uwu_miku_birthday_title">生日</string>
+    <string name="uwu_miku_birthday_summary">8 月 31 日</string>
+    <string name="uwu_miku_age_title">年龄</string>
+    <string name="uwu_miku_age_summary">16</string>
+    <string name="uwu_miku_voice_title">声源</string>
+    <string name="uwu_miku_voice_summary">藤田咲</string>
+    <string name="uwu_miku_weight_title">体重</string>
+    <string name="uwu_miku_weight_summary">42 公斤</string>
+    <string name="uwu_miku_height_title">身高</string>
+    <string name="uwu_miku_height_summary">158 厘米</string>
 </resources>
