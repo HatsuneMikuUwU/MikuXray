@@ -321,7 +321,7 @@
     <string name="subscription_user_agent">User agent</string>
     <string name="confirm">Confirm</string>
     <string name="missing_plugin">Missing plugin</string>
-    <string name="profile_requiring_plugin">Profile %s requires %s plugin, but it was not found.</string>
+    <string name="profile_requiring_plugin" formatted="false">Profile %s requires %s plugin, but it was not found.</string>
     <string name="ooc_subscription_token">OOCv1 API token</string>
     <string name="ooc_subscription_token_invalid">Invalid OOCv1 token</string>
     <string name="update_subscription_warning">Proxy is not connected, are you sure you want to continue updating?</string>
@@ -339,7 +339,7 @@
     <string name="group_filter_tags_nf">No tag in this subscription</string>
     <string name="group_filter_owners_nf">No owner in this subscription</string>
     <string name="subscription_used">%s used</string>
-    <string name="subscription_traffic">%s used / %s remaining</string>
+    <string name="subscription_traffic" formatted="false">%s used / %s remaining</string>
     <string name="subscription_import">Import subscription</string>
     <string name="subscription_import_message">Are you sure you want to import subscription %s? If the source is not trustworthy, your IP and behavior will be leaked.</string>
     <string name="profile_import">Import profile</string>
@@ -371,9 +371,9 @@
     <string name="group_order_origin">By original order</string>
     <string name="group_order_by_name">Alphabetically</string>
     <string name="group_order_by_delay">By latency</string>
-    <string name="plugin_exists_but_on_shit_system">Profile %s requires %s plugin, but your proprietary equipment vendor (usually surveillance capital giants and malware maker) tampered with your Android, making the plugin unusable.</string>
-    <string name="traffic_uplink">%s | %s/s ↑</string>
-    <string name="traffic_downlink">%s | %s/s ↓</string>
+    <string name="plugin_exists_but_on_shit_system" formatted="false">Profile %s requires %s plugin, but your proprietary equipment vendor (usually surveillance capital giants and malware maker) tampered with your Android, making the plugin unusable.</string>
+    <string name="traffic_uplink" formatted="false">%s | %s/s ↑</string>
+    <string name="traffic_downlink" formatted="false">%s | %s/s ↓</string>
     <string name="traffic_uplink_total" translatable="false">%s ↑</string>
     <string name="traffic_downlink_total" translatable="false">%s ↓</string>
     <string name="traffic_active">Active</string>
