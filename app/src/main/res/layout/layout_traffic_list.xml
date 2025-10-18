@@ -20,14 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingTop="4dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
         android:paddingBottom="64dp"
         android:scrollbarSize="0dp"
         android:visibility="gone"
-        app:fastScrollAutoHide="true"
-        app:fastScrollThumbColor="?colorPrimary"
-        app:fastScrollThumbInactiveColor="?colorPrimary"
         tools:listitem="@layout/layout_profile" />
 </LinearLayout>
