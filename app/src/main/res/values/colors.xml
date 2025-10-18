@@ -25,6 +25,9 @@
         <item>@color/black_primary</item>
     </integer-array>
 
+    <color name="profile_ping_available">#4CAF50</color>
+    <color name="profile_ping_unavailable">#F44336</color>
+
     <color name="red_primary">#ffa50007</color>
     <color name="red_onPrimary">#ffffffff</color>
     <color name="red_primaryContainer">#ffdc3128</color>
