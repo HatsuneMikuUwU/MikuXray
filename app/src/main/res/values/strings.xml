@@ -628,4 +628,60 @@
     <string name="pinned_peer_certificate_sha256_hex_dialog_message">Use with "skip certificate verification" if the certificate itself is untrusted or invalid. One per line in hex encoding.</string>
     <string name="mtls_certificate">mTLS certificate</string>
     <string name="mtls_certificate_private_key">mTLS certificate private key</string>
+
+    <!-- uwu -->
+    <string name="uwu_about_miku_summary">Hatsune Miku is a Vocaloid-based virtual singer released by Crypton Future Media, code-named CV01. Known for her long turquoise twintails and clear voice, she is a 16-year-old girl and a globally renowned virtual idol. She is active in music, concerts, and anime, and is deeply loved by her fans.</string>
+    <string name="uwu_about_miku_title">Who is Hatsune Miku?</string>
+    <string name="uwu_about_version_summary">Tap here or arrow icon to know more about the app.</string>
+    <string name="uwu_about_version_title">About app</string>
+    <string name="uwu_banner_settings_summary">"Welcome to the settings
+menu, please select
+whichever option
+you need."</string>
+    <string name="uwu_banner_summary">"Let's sing with me!"</string>
+    <string name="uwu_banner_title">Hi, master</string>
+    <string name="uwu_general_settings_title">General settings</string>
+    <string name="uwu_maintainer_summary">HatsuneMikuUwU Development</string>
+    <string name="uwu_maintainer_title">This app is under maintenance</string>
+    <string name="uwu_splash_summary">Version 0.16.9-UwU</string>
+    <string name="uwu_splash_title">"Made With ❤️
+By HatsuneMikuUwU Development"</string>
+    <string name="uwu_theme_settings_summary">Choose the accent color yourself</string>
+    <string name="uwu_theme_settings_title">Theme settings</string>
+    <string name="uwu_banner_settings_title">Hello there...</string>
+
+    <!-- miku-->
+    <string name="uwu_miku_gender_title">Gender </string>
+    <string name="uwu_miku_gender_summary">Female</string>
+    <string name="uwu_miku_birthday_title">Birthday </string>
+    <string name="uwu_miku_birthday_summary">August 31</string>
+    <string name="uwu_miku_age_title">Age </string>
+    <string name="uwu_miku_age_summary">16</string>
+    <string name="uwu_miku_voice_title">Voice </string>
+    <string name="uwu_miku_voice_summary">Saki Fujita</string>
+    <string name="uwu_miku_weight_title">Weight </string>
+    <string name="uwu_miku_weight_summary">42 kg</string>
+    <string name="uwu_miku_height_title">Height </string>
+    <string name="uwu_miku_height_summary">158 cm</string>
+
+    <string name="uwu_nekobox">NekoBox</string>
+    <string name="uwu_mikubox">MikuBox</string>
+    <string name="uwu_hatsune">Hatsune</string>
+    <string name="uwu_hsskyboy">NPCN</string>
+
+    <string name="uwu_skip">Skip</string>
+    <string name="uwu_next">Next</string>
+    <string name="uwu_start">Start</string>
+
+    <string name="uwu_welcome_title">Welcome to</string>
+    <string name="uwu_welcome_summary_1">MikuBox
+    A sing-box client for Android.</string>
+    <string name="uwu_welcome_summary_2">Sing-box client for Android With a Miku UI style from the UwU development.</string>
+    <string name="uwu_welcome_summary_3">Made with Heart, Gradle, Kotlin, Java code and more.</string>
+
+    <string name="uwu_greeting_morning">Good morning...</string>
+    <string name="uwu_greeting_afternoon">Good afternoon...</string>
+    <string name="uwu_greeting_evening">Good evening...</string>
+    <string name="uwu_greeting_night">Good night...</string>
+    <string name="uwu_greeting_late_night">"It's time to go to sleep..."</string>
 </resources>
