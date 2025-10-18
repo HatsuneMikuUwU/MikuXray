@@ -1,145 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.material.card.MaterialCardView
     android:id="@+id/content"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    android:clickable="true"
     android:focusable="true"
-    app:cardElevation="2dp">
-
+    android:clickable="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12.0dip"
+    android:layout_marginTop="16.0dip"
+    android:layout_marginRight="12.0dip"
+    android:layout_marginBottom="0.0dip"
+    app:cardBackgroundColor="?attr/colorCard"
+    app:cardCornerRadius="14.0dip"
+    app:cardElevation="0.0dip"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="12dp">
-
+            android:padding="12.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip">
             <ImageView
                 android:id="@+id/icon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:importantForAccessibility="no"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
                 android:scaleType="fitCenter"
+                android:importantForAccessibility="no"
                 tools:src="@android:drawable/sym_def_app_icon" />
-
             <LinearLayout
-                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="4.0dip"
+                android:layout_weight="1.0"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginEnd="8.0dip">
                 <TextView
+                    android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+                    android:textSize="17.0sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:ellipsize="end"
                     android:id="@+id/label"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="18sp"
+                    android:layout_height="wrap_content" 
                     tools:text="Package label" />
-
                 <TextView
+                    android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                    android:textSize="12.0sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:ellipsize="end"
                     android:id="@+id/desc"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:breakStrategy="high_quality"
-                    android:ellipsize="end"
-                    android:textColor="?android:attr/textColorTertiary"
-                    android:textSize="12sp"
+                    android:layout_height="wrap_content" 
                     tools:text="com.package.name (10000)" />
-
             </LinearLayout>
-
             <LinearLayout
-                android:id="@+id/menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_gravity="top"
+                android:id="@+id/menu"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:focusable="true">
-
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="12dp">
-
+                    android:padding="12.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
                     <androidx.appcompat.widget.AppCompatImageView
                         android:id="@+id/menuIcon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+                        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+                        app:tint="?attr/colorOnSurface" />
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingStart="12dp"
-            android:paddingEnd="8dp"
-            android:paddingBottom="4dp">
-
+            android:paddingBottom="4.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="12.0dip"
+            android:paddingEnd="8.0dip">
             <TextView
+                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                android:textSize="14.0sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:id="@+id/tcp_connections"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="?android:attr/textColorSecondary" />
-
+                android:layout_weight="1.0" />
             <TextView
+                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                android:textSize="14.0sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:id="@+id/traffic_uplink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="@string/traffic_uplink"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="?android:attr/textColorSecondary" />
-
+                android:text="@string/traffic_uplink" />
         </LinearLayout>
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingStart="12dp"
-            android:paddingEnd="8dp"
-            android:paddingBottom="12dp">
-
+            android:paddingBottom="12.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="12.0dip"
+            android:paddingEnd="8.0dip">
             <TextView
+                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                android:textSize="14.0sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:id="@+id/udp_connections"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="?android:attr/textColorSecondary" />
-
+                android:layout_weight="1.0" />
             <TextView
+                android:textAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                android:textSize="14.0sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:id="@+id/traffic_downlink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:text="@string/traffic_downlink"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="?android:attr/textColorSecondary" />
-
+                android:layout_marginStart="4.0dip" />
         </LinearLayout>
-
     </LinearLayout>
-
 </com.google.android.material.card.MaterialCardView>
