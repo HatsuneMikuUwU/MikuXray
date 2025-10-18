@@ -1,54 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="routeName"
         app:title="@string/route_name"
         app:useSimpleSummaryProvider="true" />
-    <io.nekohasekai.sagernet.widget.AppListPreference
-        app:icon="@drawable/ic_baseline_legend_toggle_24"
-        app:key="routePackages"
-        app:title="@string/apps" />
-    <androidx.preference.MultiSelectListPreference
-        app:entries="@array/network_type_entry"
-        app:entryValues="@array/network_type_value"
-        app:icon="@drawable/baseline_public_24"
-        app:key="routeNetworkType"
-        app:title="@string/network_type"
-        app:useSimpleSummaryProvider="true" />
-    <EditTextPreference
-        app:icon="@drawable/baseline_wifi_lock_24"
-        app:key="routeSSID"
-        app:title="@string/route_ssid"
-        app:dialogMessage="@string/one_per_line"
-        app:useSimpleSummaryProvider="true" />
-    <PreferenceCategory app:title="@string/cag_route">
+    <PreferenceCategory
+        app:title="@string/uwu_general_settings_title">
+        <io.nekohasekai.sagernet.widget.AppListPreference
+            android:layout="@layout/uwu_top"
+            app:icon="@drawable/ic_baseline_legend_toggle_24"
+            app:key="routePackages"
+            app:title="@string/apps" />
+        <androidx.preference.MultiSelectListPreference
+            android:layout="@layout/uwu_bot"
+            app:entries="@array/network_type_entry"
+            app:entryValues="@array/network_type_value"
+            app:icon="@drawable/baseline_public_24"
+            app:key="routeNetworkType"
+            app:title="@string/network_type"
+            app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_sin"
+            app:dialogMessage="@string/one_per_line"
+            app:icon="@drawable/baseline_wifi_lock_24"
+            app:key="routeSSID"
+            app:title="@string/route_ssid"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="@string/cag_route">
+        <EditTextPreference
+            android:layout="@layout/uwu_top"
+            app:dialogMessage="@string/one_per_line"
             app:icon="@drawable/ic_baseline_domain_24"
             app:key="routeDomain"
             app:title="domains"
-            app:dialogMessage="@string/one_per_line"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:dialogMessage="@string/one_per_line"
             app:icon="@drawable/ic_baseline_add_road_24"
             app:key="routeIP"
             app:title="ip"
-            app:dialogMessage="@string/one_per_line"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout="@layout/uwu_mid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             app:icon="@drawable/ic_maps_directions_boat"
             app:key="routePort"
             app:title="port"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_baseline_home_24"
             app:key="routeSourcePort"
             app:title="sourcePort"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/route_protocol_entry"
             app:entryValues="@array/route_protocol_value"
             app:icon="@drawable/ic_baseline_compare_arrows_24"
@@ -56,31 +70,34 @@
             app:title="network"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:dialogMessage="@string/one_per_line"
             app:icon="@drawable/ic_baseline_local_bar_24"
             app:key="routeSource"
             app:title="source"
-            app:dialogMessage="@string/one_per_line"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
+            app:dialogMessage="@string/one_per_line"
             app:icon="@drawable/ic_baseline_layers_24"
             app:key="routeProtocol"
             app:title="protocol"
-            app:dialogMessage="@string/one_per_line"
             app:useSimpleSummaryProvider="true" />
-        <!--EditTextPreference
-            app:icon="@drawable/ic_baseline_manage_search_24"
-            app:key="routeAttrs"
-            app:title="attrs"
-            app:useSimpleSummaryProvider="true" /-->
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_hardware_router"
             app:key="routeOutbound"
             app:title="outbound" />
         <SwitchPreference
+            android:layout="@layout/uwu_top_switch"
+            android:widgetLayout="@layout/uwu_switch"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"
             app:icon="@drawable/ic_baseline_domain_24"
             app:key="routeReverse"
             app:title="@string/route_reverse" />
         <EditTextPreference
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_baseline_flip_camera_android_24"
             app:key="routeRedirect"
             app:title="@string/route_reverse_redirect"
