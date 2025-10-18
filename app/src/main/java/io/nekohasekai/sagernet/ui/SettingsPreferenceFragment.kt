@@ -114,18 +114,9 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         fun getLanguageDisplayName(code: String): String = run {
             return when (code) {
                 "" -> getString(R.string.language_system_default)
-                "ar" -> getString(R.string.language_ar_display_name)
                 "en-US" -> getString(R.string.language_en_display_name)
-                "es" -> getString(R.string.language_es_display_name)
-                "fa" -> getString(R.string.language_fa_display_name)
-                "fr" -> getString(R.string.language_fr_display_name)
                 "id" -> getString(R.string.language_id_display_name)
-                "it" -> getString(R.string.language_it_display_name)
-                "nb-NO" -> getString(R.string.language_nb_NO_display_name)
-                "ru" -> getString(R.string.language_ru_display_name)
-                "tr" -> getString(R.string.language_tr_display_name)
                 "zh-Hans-CN" -> getString(R.string.language_zh_Hans_CN_display_name)
-                "zh-Hant-TW" -> getString(R.string.language_zh_Hant_TW_display_name)
                 else -> Locale.forLanguageTag(code).displayName // just a fallback name from Java
             }
         }
