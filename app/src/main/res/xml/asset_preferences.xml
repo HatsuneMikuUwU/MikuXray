@@ -1,10 +1,15 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="assetName"
         app:title="@string/route_asset_name"
         app:useSimpleSummaryProvider="true" />
     <io.nekohasekai.sagernet.widget.LinkOrContentPreference
+        android:layout="@layout/uwu_sin"
         app:icon="@drawable/ic_baseline_link_24"
         app:key="assetUrl"
         app:title="@string/route_asset_url"
