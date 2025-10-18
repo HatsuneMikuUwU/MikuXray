@@ -30,30 +30,29 @@ import io.nekohasekai.sagernet.ktx.app
 object Theme {
 
     const val RED = 1
-    const val PINK = 2
-    const val PURPLE = 3
-    const val DEEP_PURPLE = 4
-    const val INDIGO = 5
-    const val BLUE = 6
-    const val LIGHT_BLUE = 7
-    const val CYAN = 8
-    const val TEAL = 9
-    const val GREEN = 10
-    const val LIGHT_GREEN = 11
-    const val LIME = 12
-    const val YELLOW = 13
-    const val AMBER = 14
-    const val ORANGE = 15
-    const val DEEP_ORANGE = 16
+    const val PINK_SSR = 2
+    const val PINK = 3
+    const val PURPLE = 4
+    const val DEEP_PURPLE = 5
+    const val INDIGO = 6
+    const val BLUE = 7
+    const val LIGHT_BLUE = 8
+    const val CYAN = 9
+    const val TEAL = 10
+    const val GREEN = 11
+    const val LIGHT_GREEN = 12
+    const val LIME = 13
+    const val YELLOW = 14
+    const val AMBER = 15
+    const val ORANGE = 16
+    const val DEEP_ORANGE = 17
+    const val BROWN = 18
+    const val GREY = 19
+    const val BLUE_GREY = 20
+    const val BLACK = 21
+    const val DYNAMIC = 22
 
-    const val BROWN = 17
-    const val GREY = 18
-    const val BLUE_GREY = 19
-    const val BLACK = 20
-
-    const val DYNAMIC = 21
-
-    private fun defaultTheme() = PINK
+    private fun defaultTheme() = TEAL
 
     fun apply(context: Context) {
         context.setTheme(getTheme())
@@ -75,6 +74,7 @@ object Theme {
         return when (theme) {
             RED -> R.style.Theme_SagerNet_Red
             PINK -> R.style.Theme_SagerNet
+            PINK_SSR -> R.style.Theme_SagerNet_Pink_SSR
             PURPLE -> R.style.Theme_SagerNet_Purple
             DEEP_PURPLE -> R.style.Theme_SagerNet_DeepPurple
             INDIGO -> R.style.Theme_SagerNet_Indigo
@@ -92,7 +92,7 @@ object Theme {
             BROWN -> R.style.Theme_SagerNet_Brown
             GREY -> R.style.Theme_SagerNet_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_BlueGrey
-            BLACK -> if (usingNightMode()) R.style.Theme_SagerNet_Black else R.style.Theme_SagerNet_LightBlack
+            BLACK -> R.style.Theme_SagerNet_Black
             DYNAMIC -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) R.style.Theme_SagerNet_Dynamic else getTheme(defaultTheme())
             else -> getTheme(defaultTheme())
         }
@@ -102,6 +102,7 @@ object Theme {
         return when (theme) {
             RED -> R.style.Theme_SagerNet_Dialog_Red
             PINK -> R.style.Theme_SagerNet_Dialog
+            PINK_SSR -> R.style.Theme_SagerNet_Dialog_Pink_SSR
             PURPLE -> R.style.Theme_SagerNet_Dialog_Purple
             DEEP_PURPLE -> R.style.Theme_SagerNet_Dialog_DeepPurple
             INDIGO -> R.style.Theme_SagerNet_Dialog_Indigo
@@ -119,7 +120,7 @@ object Theme {
             BROWN -> R.style.Theme_SagerNet_Dialog_Brown
             GREY -> R.style.Theme_SagerNet_Dialog_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_Dialog_BlueGrey
-            BLACK -> if (usingNightMode()) R.style.Theme_SagerNet_Dialog_Black else R.style.Theme_SagerNet_Dialog_LightBlack
+            BLACK -> R.style.Theme_SagerNet_Dialog_Black
             DYNAMIC -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) R.style.Theme_SagerNet_Dialog_Dynamic else getDialogTheme(defaultTheme())
             else -> getDialogTheme(defaultTheme())
         }
