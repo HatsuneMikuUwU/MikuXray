@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
     android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.ToolsFragment">
-
     <include
-        layout="@layout/layout_appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tools_tab"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="?colorPrimary"
-        android:elevation="4dp"
-        app:tabIndicatorColor="?tabIndicatorColor"
-        app:tabIndicatorFullWidth="false"
-        app:tabMode="fixed"
-        app:tabPaddingStart="16dp"
-        app:tabRippleColor="?tabRippleColor"
-        app:tabSelectedTextColor="?tabSelectedTextColor"
-        app:tabTextAppearance="@style/TabTextAppearance"
-        app:tabTextColor="?tabTextColor"
-        app:tabUnboundedRipple="false" />
-
+        layout="@layout/layout_appbar" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginHorizontal="16.0dip"
+        app:cardBackgroundColor="?attr/colorCard"
+        app:cardCornerRadius="14.0dip"
+        app:cardElevation="0.0dip"
+        app:strokeWidth="0.0dip">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tools_tab"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="64.0dip"
+            app:tabIndicator="@drawable/uwu_tabs_rounded_indicator"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="?attr/colorPrimary"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="64.0dip"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="24.0dip"
+            app:tabPaddingStart="24.0dip"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+            app:tabSelectedTextColor="?attr/colorSurface"
+            app:tabTextAppearance="@style/TextAppearance.M3.Sys.Typescale.TitleMedium"
+            app:tabTextColor="?attr/colorOnSurfaceVariant" />
+    </com.google.android.material.card.MaterialCardView>
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/tools_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
 </LinearLayout>
