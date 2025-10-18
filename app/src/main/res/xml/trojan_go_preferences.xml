@@ -1,40 +1,51 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="profileName"
         app:title="@string/profile_name"
         app:useSimpleSummaryProvider="true" />
-
-    <PreferenceCategory app:title="@string/proxy_cat">
-
+    <PreferenceCategory
+        app:title="@string/proxy_cat">
         <EditTextPreference
+            android:layout="@layout/uwu_top"
             app:icon="@drawable/ic_hardware_router"
             app:key="serverAddress"
             app:title="@string/server_address"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_maps_directions_boat"
             app:key="serverPort"
             app:title="@string/server_port"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:dialogLayout="@layout/layout_password_dialog"
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword"
             app:title="@string/password"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_action_copyright"
             app:key="serverSNI"
             app:title="@string/sni"
             app:useSimpleSummaryProvider="true" />
         <SwitchPreference
+            android:layout="@layout/uwu_mid_switch"
+            android:widgetLayout="@layout/uwu_switch"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"
             app:icon="@drawable/ic_notification_enhanced_encryption"
             app:key="serverAllowInsecure"
             app:summary="@string/allow_insecure_sum"
             app:title="@string/allow_insecure" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:defaultValue="none"
             app:entries="@array/trojan_go_networks_entry"
             app:entryValues="@array/trojan_go_networks_value"
@@ -43,6 +54,7 @@
             app:title="@string/network"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/trojan_go_security_entry"
             app:entryValues="@array/trojan_go_security_value"
             app:icon="@drawable/ic_baseline_layers_24"
@@ -50,6 +62,7 @@
             app:title="@string/enc_method"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_bot"
             app:entries="@array/trojan_go_utls_value"
             app:entryValues="@array/trojan_go_utls_value"
             app:icon="@drawable/ic_baseline_fingerprint_24"
@@ -57,27 +70,27 @@
             app:title="@string/utls_fingerprint"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
     <PreferenceCategory
         app:key="serverWsCategory"
         app:title="@string/cag_ws">
         <EditTextPreference
+            android:layout="@layout/uwu_top"
             app:icon="@drawable/ic_baseline_airplanemode_active_24"
             app:key="serverHost"
             app:title="@string/ws_host"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_baseline_format_align_left_24"
             app:key="serverPath"
             app:title="@string/ws_path"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
     <PreferenceCategory
         app:key="serverSsCategory"
         app:title="@string/ss_cat">
-
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_top"
             app:defaultValue="aes-128-gcm"
             app:entries="@array/trojan_go_methods_value"
             app:entryValues="@array/trojan_go_methods_value"
@@ -86,27 +99,30 @@
             app:title="@string/enc_method"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
-            app:dialogLayout="@layout/layout_password_dialog"
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword1"
             app:title="@string/password"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
     <PreferenceCategory
         app:key="serverMuxCategory"
         app:title="@string/mux_settings">
         <SwitchPreference
+            android:layout="@layout/uwu_sin_switch"
+            android:widgetLayout="@layout/uwu_switch"
+            android:summaryOn="@string/on"
+            android:summaryOff="@string/off"
             app:icon="@drawable/ic_baseline_compare_arrows_24"
             app:key="serverMux"
             app:title="@string/enable_mux"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_sin"
             app:defaultValue="8"
             app:icon="@drawable/ic_baseline_low_priority_24"
             app:key="serverMuxConcurrency"
             app:title="@string/mux_concurrency"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
 </PreferenceScreen>
