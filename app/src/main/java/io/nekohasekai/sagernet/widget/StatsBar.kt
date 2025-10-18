@@ -36,12 +36,13 @@ import io.nekohasekai.sagernet.database.DataStore
 import io.nekohasekai.sagernet.ktx.*
 import io.nekohasekai.sagernet.ui.MainActivity
 import io.nekohasekai.sagernet.utils.FormatFileSizeCompat
+import com.neko.marquee.text.AutoMarqueeTextView
 
 class StatsBar @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null,
     defStyleAttr: Int = com.google.android.material.R.attr.bottomAppBarStyle,
 ) : BottomAppBar(context, attrs, defStyleAttr) {
-    private lateinit var statusText: TextView
+    private lateinit var statusText: AutoMarqueeTextView
     private lateinit var txText: TextView
     private lateinit var rxText: TextView
     private lateinit var behavior: YourBehavior
