@@ -1,40 +1,48 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="profileName"
         app:title="@string/profile_name"
         app:useSimpleSummaryProvider="true" />
-
-    <PreferenceCategory app:title="@string/proxy_cat">
-
+    <PreferenceCategory
+        app:title="@string/proxy_cat">
         <EditTextPreference
+            android:layout="@layout/uwu_top"
             app:icon="@drawable/ic_hardware_router"
             app:key="serverAddress"
             app:title="@string/server_address"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_maps_directions_boat"
             app:key="serverPort"
             app:title="@string/server_port"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_baseline_person_24"
             app:key="serverUserId"
             app:title="@string/uuid"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:dialogLayout="@layout/layout_password_dialog"
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword"
             app:title="@string/password"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_action_copyright"
             app:key="serverSNI"
             app:title="@string/sni"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/juicity_congestion_control_value"
             app:entryValues="@array/juicity_congestion_control_value"
             app:icon="@drawable/baseline_widgets_24"
@@ -42,48 +50,54 @@
             app:title="@string/juicity_congestion_control"
             app:useSimpleSummaryProvider="true" />
         <SwitchPreference
+            android:layout="@layout/uwu_mid_switch"
+            android:widgetLayout="@layout/uwu_switch"
             app:icon="@drawable/ic_notification_enhanced_encryption"
             app:key="serverAllowInsecure"
             app:summary="@string/allow_insecure_sum"
             app:title="@string/allow_insecure" />
         <EditTextPreference
+            android:layout="@layout/uwu_bot"
             app:dialogMessage="@string/pinned_peer_certificate_sha256_base64_dialog_message"
             app:icon="@drawable/ic_baseline_push_pin_24"
             app:key="serverPinnedCertificateChain"
             app:title="@string/pinned_peer_certificate_chain_sha256"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
     <PreferenceCategory
-        app:title="@string/core_settings"
-        app:summary="@string/core_settings_sum">
+        app:summary="@string/core_settings_sum"
+        app:title="@string/core_settings">
         <EditTextPreference
+            android:layout="@layout/uwu_top"
             app:dialogMessage="@string/pinned_peer_certificate_sha256_hex_dialog_message"
             app:icon="@drawable/ic_baseline_push_pin_24"
             app:key="serverPinnedCertificate"
             app:title="@string/pinned_peer_certificate_sha256"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:dialogMessage="@string/pinned_peer_certificate_sha256_base64_dialog_message"
             app:icon="@drawable/ic_baseline_push_pin_24"
             app:key="serverPinnedCertificatePublicKey"
             app:title="@string/pinned_peer_certificate_public_key_sha256"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_action_lock"
             app:key="serverMtlsCertificate"
             app:title="@string/mtls_certificate"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_baseline_vpn_key_24"
             app:key="serverMtlsCertificatePrivateKey"
             app:title="@string/mtls_certificate_private_key"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_baseline_security_24"
             app:key="serverEchConfig"
             app:title="@string/ech_config"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
 </PreferenceScreen>
