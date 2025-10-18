@@ -229,7 +229,7 @@ class ConfigEditActivity : ThemedActivity() {
                 methodColor = "#B6E951".toColorInt(),
                 stringColor = when (Theme.getTheme()) {
                     R.style.Theme_SagerNet_Black -> Color.WHITE
-                    R.style.Theme_SagerNet_LightBlack -> Color.BLACK
+                    R.style.Theme_SagerNet_Black -> Color.BLACK
                     else -> colorPrimaryDark
                 },
                 commentColor = "#89826D".toColorInt(),
