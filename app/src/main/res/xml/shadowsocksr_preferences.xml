@@ -1,32 +1,36 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <EditTextPreference
+        android:layout="@layout/uwu_banner_profile"
         app:icon="@drawable/ic_social_emoji_symbols"
         app:key="profileName"
         app:title="@string/profile_name"
         app:useSimpleSummaryProvider="true" />
-
-    <PreferenceCategory app:title="@string/proxy_cat">
-
+    <PreferenceCategory
+        app:title="@string/proxy_cat">
         <EditTextPreference
+            android:layout="@layout/uwu_top"
             app:icon="@drawable/ic_hardware_router"
             app:key="serverAddress"
             app:title="@string/server_address"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_maps_directions_boat"
             app:key="serverPort"
             app:title="@string/server_port"
             app:useSimpleSummaryProvider="true" />
-
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:dialogLayout="@layout/layout_password_dialog"
             app:icon="@drawable/ic_settings_password"
             app:key="serverPassword"
             app:title="@string/password"
             app:useSimpleSummaryProvider="true" />
-
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/ssr_enc_method_value"
             app:entryValues="@array/ssr_enc_method_value"
             app:icon="@drawable/ic_notification_enhanced_encryption"
@@ -34,6 +38,7 @@
             app:title="@string/enc_method"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/protocol_value"
             app:entryValues="@array/protocol_value"
             app:icon="@drawable/ic_baseline_compare_arrows_24"
@@ -41,11 +46,13 @@
             app:title="@string/protocol"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_mid"
             app:icon="@drawable/ic_baseline_format_align_left_24"
             app:key="serverProtocolParam"
             app:title="@string/protocol_param"
             app:useSimpleSummaryProvider="true" />
         <com.takisoft.preferencex.SimpleMenuPreference
+            android:layout="@layout/uwu_mid"
             app:entries="@array/obfs_value"
             app:entryValues="@array/obfs_value"
             app:icon="@drawable/ic_baseline_texture_24"
@@ -53,11 +60,10 @@
             app:title="@string/obfs"
             app:useSimpleSummaryProvider="true" />
         <EditTextPreference
+            android:layout="@layout/uwu_bot"
             app:icon="@drawable/ic_baseline_format_align_left_24"
             app:key="serverObfsParam"
             app:title="@string/obfs_param"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
-
 </PreferenceScreen>
