@@ -630,9 +630,7 @@
     <string name="pinned_peer_certificate_sha256_hex_dialog_message">Use with "skip certificate verification" if the certificate itself is untrusted or invalid. One per line in hex encoding.</string>
     <string name="mtls_certificate">mTLS certificate</string>
     <string name="mtls_certificate_private_key">mTLS certificate private key</string>
-    <string name="pref_dynamic_theme_title">Use Dynamic Theme</string>
-    <string name="pref_dynamic_theme_summary">Use dynamic colors according to the wallpaper (Material You)</string>
-
+    
     <!-- uwu -->
     <string name="uwu_about_miku_summary">Hatsune Miku is a Vocaloid-based virtual singer released by Crypton Future Media, code-named CV01. Known for her long turquoise twintails and clear voice, she is a 16-year-old girl and a globally renowned virtual idol. She is active in music, concerts, and anime, and is deeply loved by her fans.</string>
     <string name="uwu_about_miku_title">Who is Hatsune Miku?</string>
