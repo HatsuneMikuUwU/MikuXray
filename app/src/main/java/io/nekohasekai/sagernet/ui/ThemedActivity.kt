@@ -106,11 +106,6 @@ abstract class ThemedActivity : AppCompatActivity {
 
         if (newConfig.uiMode != uiMode) {
             uiMode = newConfig.uiMode
-
-            if (DataStore.appTheme == Theme.BLACK) {
-                Theme.apply(this)
-            }
-
             ActivityCompat.recreate(this)
         }
     }
