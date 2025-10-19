@@ -274,7 +274,7 @@ fun Project.setupApp() {
             }
             outputs.all {
                 this as BaseVariantOutputImpl
-                outputFileName = outputFileName.replace(project.name, "Exclave-$versionName")
+                outputFileName = outputFileName.replace(project.name, "MikuXray-$versionName")
                     .replace("-release", "")
                     .replace("-oss", "")
 
