@@ -31,7 +31,6 @@ import io.nekohasekai.sagernet.database.preference.PublicDatabase
 import io.nekohasekai.sagernet.database.preference.RoomPreferenceDataStore
 import io.nekohasekai.sagernet.ktx.*
 import io.nekohasekai.sagernet.utils.DirectBoot
-import io.nekohasekai.sagernet.utils.Theme
 
 object DataStore : OnPreferenceDataStoreChangeListener {
 
@@ -128,10 +127,6 @@ object DataStore : OnPreferenceDataStoreChangeListener {
         val groups = SagerDatabase.groupDao.allGroups()
         return groups.find { it.type == GroupType.BASIC }!!.id
     }
-
-    var lastAppTheme: Int
-    get() = configurationStore.getInt("last_app_theme", Theme.TEAL)
-    set(value) = configurationStore.putInt("last_app_theme", value)
 
     var appTheme by configurationStore.int(Key.APP_THEME)
     var nightTheme by configurationStore.stringToInt(Key.NIGHT_THEME)
