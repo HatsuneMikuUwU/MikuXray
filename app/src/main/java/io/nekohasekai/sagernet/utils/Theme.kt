@@ -1,27 +1,7 @@
-/******************************************************************************
- *                                                                            *
- * Copyright (C) 2021 by nekohasekai <contact-sagernet@sekai.icu>             *
- *                                                                            *
- * This program is free software: you can redistribute it and/or modify       *
- * it under the terms of the GNU General Public License as published by       *
- * the Free Software Foundation, either version 3 of the License, or          *
- *  (at your option) any later version.                                       *
- *                                                                            *
- * This program is distributed in the hope that it will be useful,            *
- * but WITHOUT ANY WARRANTY; without even the implied warranty of             *
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              *
- * GNU General Public License for more details.                               *
- *                                                                            *
- * You should have received a copy of the GNU General Public License          *
- * along with this program. If not, see <http://www.gnu.org/licenses/>.       *
- *                                                                            *
- ******************************************************************************/
-
 package io.nekohasekai.sagernet.utils
 
 import android.content.Context
 import android.content.res.Configuration
-import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
 import io.nekohasekai.sagernet.R
 import io.nekohasekai.sagernet.database.DataStore
@@ -93,7 +73,7 @@ object Theme {
             GREY -> R.style.Theme_SagerNet_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_BlueGrey
             BLACK -> R.style.Theme_SagerNet_Black
-            DYNAMIC -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) R.style.Theme_SagerNet_Dynamic else getTheme(defaultTheme())
+            DYNAMIC -> R.style.Theme_SagerNet_Dynamic
             else -> getTheme(defaultTheme())
         }
     }
@@ -121,7 +101,7 @@ object Theme {
             GREY -> R.style.Theme_SagerNet_Dialog_Grey
             BLUE_GREY -> R.style.Theme_SagerNet_Dialog_BlueGrey
             BLACK -> R.style.Theme_SagerNet_Dialog_Black
-            DYNAMIC -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) R.style.Theme_SagerNet_Dialog_Dynamic else getDialogTheme(defaultTheme())
+            DYNAMIC -> R.style.Theme_SagerNet_Dialog_Dynamic
             else -> getDialogTheme(defaultTheme())
         }
     }
