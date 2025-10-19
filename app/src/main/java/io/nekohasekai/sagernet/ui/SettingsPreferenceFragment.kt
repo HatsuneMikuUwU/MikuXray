@@ -52,6 +52,7 @@ import java.util.Locale
 class SettingsPreferenceFragment : PreferenceFragmentCompat() {
 
     private lateinit var isProxyApps: SwitchPreference
+    private lateinit var dynamicSwitch: SwitchPreference
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -90,13 +91,14 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         val httpProxyException = findPreference<EditTextPreference>(Key.HTTP_PROXY_EXCEPTION)!!
 
         // app settings
-        findPreference<ColorPickerPreference>(Key.APP_THEME)!!.setOnPreferenceChangeListener { _, newTheme ->
+        val appTheme = findPreference<ColorPickerPreference>(Key.APP_THEME)!!
+        appTheme.setOnPreferenceChangeListener { _, newTheme ->
             if (SagerNet.started) {
                 SagerNet.reloadService()
             }
             val theme = Theme.getTheme(newTheme as Int)
-            app.setTheme(theme)
             requireActivity().apply {
+                setTheme(theme)
                 ActivityCompat.recreate(this)
             }
             true
@@ -108,6 +110,47 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
             requireActivity().apply {
                 ActivityCompat.recreate(this)
             }
+            true
+        }
+
+        // Dynamic Theme Switch
+         dynamicSwitch = findPreference("dynamic_theme_switch")!!
+
+         // Set initial state based on DataStore
+         val isDynamicInitially = DataStore.appTheme == Theme.DYNAMIC
+         dynamicSwitch.isChecked = isDynamicInitially
+         appTheme.isEnabled = !isDynamicInitially // Disable appTheme if dynamic is active
+
+         // Use additional DataStore to store the last theme (fallback)
+         var lastAppTheme = DataStore.lastAppTheme
+         if (lastAppTheme == 0) {
+            // If it has never been saved, use TEAL as the default.
+            lastAppTheme = Theme.TEAL
+            DataStore.lastAppTheme = lastAppTheme
+       }
+
+          // Listener when switch is changed
+          dynamicSwitch.onPreferenceChangeListener =
+              Preference.OnPreferenceChangeListener { _, newValue ->
+                val isDynamic = newValue as Boolean
+
+                if (isDynamic) {
+                // Save the last theme before activating dynamic
+                DataStore.lastAppTheme = DataStore.appTheme
+                DataStore.appTheme = Theme.DYNAMIC
+                } else {
+                // Revert to the last saved theme
+                DataStore.appTheme = DataStore.lastAppTheme.takeIf { it != Theme.DYNAMIC } ?: Theme.TEAL
+        }
+
+            // Apply theme changes
+            Theme.apply(requireContext().applicationContext)
+
+            // Reset the appTheme preference so that it is only active when non-dynamic.
+            appTheme.isEnabled = !isDynamic
+
+            // Refresh the display to apply the new theme.
+            requireActivity().recreate()
             true
         }
 
